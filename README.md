@@ -19,10 +19,10 @@ This repository is a community-driven general-purpose collaboration of ideas for
 #### Step 2:
 * Make your intended changes
 
-#### Step 4:
+#### Step 3:
 * Test your changes
 
-#### Step 3:
+#### Step 4:
 * Make a pull request with your altered fork
 
 ---
