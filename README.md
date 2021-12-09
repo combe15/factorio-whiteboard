@@ -1,6 +1,7 @@
 # Factorio-Whiteboard
 
-https://github.com/combe15/factorio-whiteboard
+Repo: https://github.com/combe15/factorio-whiteboard
+Website: https://combe15.github.io/factorio-whiteboard/
 
 This repository is a community-driven general-purpose collaboration of ideas for Factorio. [Here is how you can contribute](#how-to-collaborate)
 
