@@ -20,4 +20,4 @@ This repository is a community-driven general-purpose collaboration of ideas for
 
 > Do not edit the `.github` folder or its subfolders.
 
-> Your pull request will automatically merge once received.
+> Your pull request will automatically merge once recieved.
