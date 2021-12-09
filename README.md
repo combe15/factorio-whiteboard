@@ -2,9 +2,14 @@
 
 https://github.com/combe15/factorio-whiteboard
 
-This repository is a community-driven general-purpose collaboration of ideas for Factorio.
+This repository is a community-driven general-purpose collaboration of ideas for Factorio. [Here is how you can contribute](#how-to-collaborate)
 
-## Here is how to collaborate with this repository:
+## Links:
+ * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
+ * <a href="https://factoriobox.1au.us">FactorioBox</a>
+ * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
+
+## How to collaborate:
 
 #### Step 1:
 * Fork the repository
