@@ -10,6 +10,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
  * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
  * <a href="https://factoriobox.1au.us">FactorioBox</a>
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
+ * <a href="https://combe15.github.io/factorio-text-to-constant-combinator/">Make Text Messages with Combinators</a>
 
 ## How to collaborate:
 
