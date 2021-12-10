@@ -19,7 +19,7 @@ jobs:
       run: |
         #!/bin/bash
         diffs=$(git diff --name-only $(git rev-parse --abbrev-ref HEAD) $(git merge-base $(git rev-parse --abbrev-ref HEAD) origin/main))
-        if grep -q .github <<<$diffs; then
+        if grep -iq .github <<<$diffs; then
           exit 1;
         else exit 0;
         fi
