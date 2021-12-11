@@ -11,6 +11,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
  * <a href="https://factoriobox.1au.us">FactorioBox</a>
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
  * <a href="https://combe15.github.io/factorio-text-to-constant-combinator/">Make Text Messages with Combinators</a>
+ * <a href="https://github.com/flbuddymooreiv/factorio-logistics-requests">Make Logistics Requests Scripts</a>
 
 ## How to collaborate:
 
