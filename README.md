@@ -27,6 +27,9 @@ This repository is a community-driven general-purpose collaboration of ideas for
 #### Step 4:
 * Make a pull request with your altered fork
 
+## How to make a pull request:
+
+[![Makeing a pull request](https://i.ytimg.com/vi/YTbRzhQju4c/maxresdefault.jpg)](https://youtu.be/YTbRzhQju4c "Submiting Your First Pull Request on Github")
 ---
 
 > Do not edit the `.github` folder or its subfolders.
