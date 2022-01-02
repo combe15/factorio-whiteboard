@@ -7,6 +7,7 @@ Website: <a href="https://combe15.github.io/factorio-whiteboard/">https://combe1
 This repository is a community-driven general-purpose collaboration of ideas for Factorio. [Here is how you can contribute](#how-to-collaborate)
 
 ## Links:
+ * <a href="https://gist.github.com/stevetrov">stevetrov's legendary builds</a>
  * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
  * <a href="https://factoriobox.1au.us">FactorioBox</a>
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
