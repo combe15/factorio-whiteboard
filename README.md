@@ -13,6 +13,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
  * <a href="https://combe15.github.io/factorio-text-to-constant-combinator/">Make Text Messages with Combinators</a>
  * <a href="https://github.com/flbuddymooreiv/factorio-logistics-requests">Make Logistics Requests Scripts</a>
+ * <a href="https://discord.com/channels/579345487371567105/579346716243787782/841504803258499072">Huge Pages Tutorial in Technical Factorio discord</a>
 
 ## How to collaborate:
 
