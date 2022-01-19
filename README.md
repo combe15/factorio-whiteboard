@@ -8,6 +8,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
 
 ## Links:
  * <a href="https://gist.github.com/stevetrov">stevetrov's legendary builds</a>
+ * <a href="https://mulark.github.io/test-index.html">Mulark's Benchmarks</a>
  * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
  * <a href="https://factoriobox.1au.us">FactorioBox</a>
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
