@@ -10,7 +10,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
  * <a href="https://gist.github.com/stevetrov">stevetrov's legendary builds</a>
  * <a href="https://mulark.github.io/test-index.html">Mulark's Benchmarks</a>
  * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
- * <a href="https://factoriobox.1au.us">FactorioBox</a>
+ * <a href="https://factoriobox.1au.us">FactorioBox</a> (See how your hardware stacks up for factorio performance)
  * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
  * <a href="https://combe15.github.io/factorio-text-to-constant-combinator/">Make Text Messages with Combinators</a>
  * <a href="https://github.com/flbuddymooreiv/factorio-logistics-requests">Make Logistics Requests Scripts</a>
