@@ -18,10 +18,19 @@ local function go(args)
     local nuke_builds = turbines / args.nuke_bp_turbines
     local nukeGW = nuke_builds * args.nuke_bp_gw
     printf("%.4g nuke builds = %.2f GW", nuke_builds, nukeGW)
+    if not args.goalGW then
+      local total = 0
+      for i,_ in pairs(stats.input_counts) do
+        if game.entity_prototypes[i].type ~= 'accumulator' then
+          total = total + stats.get_flow_count{name=i, input=true, precision_index=defines.flow_precision_index.ten_minutes}
+        end
+      end
+      args.goalGW = total * 60 / 1000000000
+    end
     local nukeGW_needed_for_goal = math.max(0, args.goalGW - solarGW)
     local needed_nukes = math.ceil(nukeGW_needed_for_goal / args.nuke_bp_gw)
     local lacking_nukes = needed_nukes - nuke_builds
     printf("... need %d nuke builds (%+.4g vs. current) for goal %.2f GW", needed_nukes, lacking_nukes, args.goalGW)
   end
 end
-go{nuke_bp_turbines=224, nuke_bp_gw=1.12, goalGW=0}
+go{nuke_bp_turbines=224, nuke_bp_gw=1.12, goalGW=nil}
