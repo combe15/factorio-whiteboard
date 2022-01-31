@@ -1,4 +1,6 @@
-/c for k,v in pairs(game.player.surface.find_entities_filtered({name='lab'})) do 
+/c 
+local x = ''
+for k,v in pairs(game.player.surface.find_entities_filtered({name='lab'})) do 
   f = v.get_inventory(defines.inventory.lab_input).get_item_count 
   if f('automation-science-pack')==0 or 
       f('logistic-science-pack')==0 or 
@@ -7,6 +9,7 @@
       f('production-science-pack')==0 or 
       f('utility-science-pack')==0 or 
       f('space-science-pack')==0 then 
-    game.print('[gps='..v.position.x..','..v.position.y..']') 
+    x = x .. ' [gps='..v.position.x..','..v.position.y..']'
   end 
 end
+game.print(x)
