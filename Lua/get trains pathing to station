@@ -1,0 +1,10 @@
+/c 
+for k,v in pairs(game.player.surface.get_trains()) do 
+  if v.path_end_stop ~= nil then 
+    p = v.path_end_stop.position 
+    s = game.player.selected.position 
+    if p.x == s.x and p.y == s.y then 
+      game.print('[train=' .. v.locomotives.front_movers[1].unit_number .. ']') 
+    end 
+  end 
+end
