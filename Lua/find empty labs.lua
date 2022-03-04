@@ -12,4 +12,4 @@ for k,v in pairs(game.player.surface.find_entities_filtered({name='lab'})) do
     x = x .. ' [gps='..v.position.x..','..v.position.y..']'
   end 
 end
-game.print(x)
+game.print("Labs missing packs: " .. x)
