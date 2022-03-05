@@ -1,3 +1,18 @@
+-- optional but you may want to run it so biters won't be generated after chunks are removed
+/c
+local player = game.player
+local surface = player.surface
+surface.clear_pollution()
+surface.peaceful_mode = true
+game.map_settings.pollution.enabled = false
+game.map_settings.enemy_evolution.enabled = false
+game.map_settings.enemy_expansion.enabled = false
+for c in surface.get_chunks() do
+for key, entity in   pairs(surface.find_entities_filtered({area={{c.x * 32, c.y * 32}, {c.x * 32 + 32, c.y * 32 + 32}}, force= "enemy"})) do
+   entity.destroy()
+end
+end
+
 /c 
 ltx = 227 
 lty = 278 
