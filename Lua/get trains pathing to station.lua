@@ -6,7 +6,8 @@ for k,v in pairs(game.player.surface.get_trains()) do
   if v.path_end_stop ~= nil then 
     p = v.path_end_stop.position 
     if p.x == s.x and p.y == s.y then 
-      l = l .. '[train=' .. v.locomotives.front_movers[1].unit_number .. '] (T -' .. string.format("%.2f", (v.path.total_distance - v.path.travelled_distance)/298.1) .. 's)'
+      l = l .. '[train=' .. v.locomotives.front_movers[1].unit_number .. 
+        '] (T -' .. string.format("%.2f", (v.path.total_distance - v.path.travelled_distance)/(298.1/3.6)*(40/60)) .. ' wall seconds)'
     end 
   end 
 end
