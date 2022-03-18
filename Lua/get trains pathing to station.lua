@@ -12,4 +12,4 @@ for k,v in pairs(game.player.surface.get_trains()) do
     end 
   end 
 end
-game.print('Trains headed to ' .. stop.backer_name .. ' at [gps=' .. s.x .. ',' .. s.y .. ']: ' .. l)
+game.print('Trains headed to [' .. stop.backer_name .. '] at [gps=' .. s.x .. ',' .. s.y .. ']: ' .. l)
