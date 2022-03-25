@@ -1,14 +1,14 @@
-/c 
-local cred={} 
+/c
+local cred={}
 for k,v in pairs(game.player.surface.find_entities_filtered(
-    {type={'solar-panel','accumulator'}})) do 
+    {type={'solar-panel','accumulator'}})) do
 
     local usr = v.last_user.name
 
-    if cred[usr] then 
-        cred[usr] = cred[usr] + 1 
-    else 
-        cred[usr] = 1 
+    if cred[usr] then
+        cred[usr] = cred[usr] + 1
+    else
+        cred[usr] = 1
     end
 end
 
