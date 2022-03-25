@@ -8,27 +8,25 @@ from collections import namedtuple
 
 import mkdocs_gen_files  # pip install mkdocs-gen-files
 
-"""
-For each .lua files in the ./lua/ folder
-Create a markdown file in docs/lua_scripts/{script_name}.md
-"""
 
-for path in glob("./lua/*.lua"):
-    basename = os.path.basename(path)
-    with open(path) as f:
-        contents = f.read()
-    script_name = basename.split(".lua")[0]
-    filename = f"lua_scripts/{script_name}.md"
-    with mkdocs_gen_files.open(filename, "w") as f:
-        print(f'```lua title="{path}"\n', file=f)
-        print(contents, file=f)
-        print(f"\n```\n", file=f)
-    mkdocs_gen_files.set_edit_path(filename, path)
+def process_lua():
+    """
+    For each .lua files in the ./lua/ folder
+    Create a markdown file in docs/lua_scripts/{script_name}.md
+    """
+    for path in glob("./lua/*.lua"):
+        print(f"Processing {path}")
+        basename = os.path.basename(path)
+        with open(path) as f:
+            contents = f.read()
+        script_name = basename.split(".lua")[0]
+        filename = f"lua_scripts/{script_name}.md"
+        with mkdocs_gen_files.open(filename, "w") as f:
+            print(f'```lua title="{path}"\n', file=f)
+            print(contents, file=f)
+            print(f"\n```\n", file=f)
+        mkdocs_gen_files.set_edit_path(filename, path)
 
-"""
-For each ./blueprints/ folder
-It will create a markdown file in docs/blueprints/{script_name}.md
-"""
 
 item_types = {
     "blueprint",
@@ -36,10 +34,6 @@ item_types = {
     "deconstruction_planner",
     "upgrade_planner",
 }
-
-BlueprintItem = namedtuple(
-    "BlueprintItem", ["item_type", "label", "description", "children"]
-)
 
 
 def decode(bp: str) -> Optional[Dict]:
@@ -95,6 +89,10 @@ icons = {
 
 
 def process_blueprints():
+    """
+    For each ./blueprints/ folder
+    It will create a markdown file in docs/blueprints/{script_name}.md
+    """
     for path in glob("./blueprints/*"):
         print(f"Processing {path}")
         basename = os.path.basename(path)
@@ -150,7 +148,8 @@ def process_blueprints():
                     # print(f"\n</pre>\n", file=f)
 
         mkdocs_gen_files.set_edit_path(filename, path)
-    print(f"Done processing")
 
 
+process_lua()
 process_blueprints()
+print(f"Done processing")
