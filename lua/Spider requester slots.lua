@@ -1,4 +1,5 @@
 /silent-command
+--[[ Hover mouse over spidertron during use of this command ]]
 for k = 1, 1000 do game.player.selected.clear_vehicle_logistic_slot(k) end;
  
 game.player.selected.set_vehicle_logistic_slot( 1, {max = 0, min = 0, name = "wooden-chest"})
