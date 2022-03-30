@@ -1,6 +1,6 @@
 /sc
 l = ''
-ups = 60
+ups = 60 * game.speed
 stop = game.player.selected
 s = stop.position
 for k,v in pairs(game.player.surface.get_trains()) do
