@@ -1,0 +1,126 @@
+# Project information
+site_name: Factorio Whiteboard
+site_url: https://combe15.github.io/factorio-whiteboard/
+site_author: AssemblyStorm Factorio
+site_description: >-
+  Knowledgebase for all things Factorio
+
+# Repository
+repo_name: combe15/factorio-whiteboard
+repo_url: https://github.com/combe15/factorio-whiteboard
+
+# Copyright
+# copyright: Copyright &copy; 2021 - 2022 AssemblyStorm
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/ZwMvyrs
+
+theme:
+  name: material
+  # custom_dir: overrides
+  logo: assets/gear.png
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Additional features
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.ico
+  icon:
+    logo: logo
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+
+# Plugins
+plugins:
+  - search
+  - tags
+  - search:
+      separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
+  - minify:
+      minify_html: true
+  - gen-files:
+      scripts:
+        - gen_indexes.py
+      
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+# nav:
+#   - Home: index.md
+#   - Documentation: documentation.md

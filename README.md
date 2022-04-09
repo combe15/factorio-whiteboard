@@ -1,40 +1,52 @@
 # Factorio-Whiteboard
 
-Repo: <a href="https://github.com/combe15/factorio-whiteboard">https://github.com/combe15/factorio-whiteboard</a>
+Repo: https://github.com/combe15/factorio-whiteboard
 
-Website: <a href="https://combe15.github.io/factorio-whiteboard/">https://combe15.github.io/factorio-whiteboard/</a>
+Website: https://combe15.github.io/factorio-whiteboard/
 
 This repository is a community-driven general-purpose collaboration of ideas for Factorio. [Here is how you can contribute](#how-to-collaborate)
 
-## Links:
- * <a href="https://gist.github.com/stevetrov">stevetrov's legendary builds</a>
- * <a href="https://mulark.github.io/test-index.html">Mulark's Benchmarks</a>
- * <a href="assemblystorm.html">AssemblyStorm's Factorio (A'sF) Server Stuff</a>
- * <a href="https://factoriobox.1au.us">FactorioBox</a> (See how your hardware stacks up for factorio performance)
- * <a href="https://kirkmcdonald.github.io/calc.html">Kirk McDonald Calculator</a> 
- * <a href="https://combe15.github.io/factorio-text-to-constant-combinator/">Make Text Messages with Combinators</a>
- * <a href="https://github.com/flbuddymooreiv/factorio-logistics-requests">Make Logistics Requests Scripts</a>
- * <a href="https://discord.com/channels/579345487371567105/579346716243787782/841504803258499072">Huge Pages Tutorial in Technical Factorio discord</a>
+## Links
 
-## How to collaborate:
+- [stevetrov's legendary builds](https://gist.github.com/stevetrov)
+- [Mulark's Benchmarks](https://mulark.github.io/test-index.html)
+- [AssemblyStorm's Factorio (A'sF) Server Stuff](assemblystorm.html)
+- [FactorioBox](https://factoriobox.1au.us) (See how your hardware stacks up for factorio performance)
+- [Kirk McDonald Calculator](https://kirkmcdonald.github.io/calc.html)
+- [Make Text Messages with Combinators](https://combe15.github.io/factorio-text-to-constant-combinator/)
+- [Make Logistics Requests Scripts](https://github.com/flbuddymooreiv/factorio-logistics-requests)
+- [Huge Pages Tutorial in Technical Factorio discord](https://discord.com/channels/579345487371567105/579346716243787782/841504803258499072)
 
-#### Step 1:
-* Fork the repository
+## How to collaborate
 
-#### Step 2:
-* Make your intended changes
+1. Fork the repository
+1. Make your intended changes
+1. Test your changes
+1. Make a pull request with your altered fork
 
-#### Step 3:
-* Test your changes
+## How to make a pull request
 
-#### Step 4:
-* Make a pull request with your altered fork
+- Do not edit the `.github` folder or its subfolders.
 
-## How to make a pull request:
+- Your pull request will automatically merge once recieved.
 
-[![Makeing a pull request](https://i.ytimg.com/vi/YTbRzhQju4c/maxresdefault.jpg)](https://youtu.be/YTbRzhQju4c "Submiting Your First Pull Request on Github")
----
+## Welcome to Material for Mkdocs
 
-> Do not edit the `.github` folder or its subfolders.
+For full documentation visit [https://squidfunk.github.io/mkdocs-material/reference/](https://squidfunk.github.io/mkdocs-material/reference/).
 
-> Your pull request will automatically merge once recieved.
+## Commands
+
+- `mkdocs serve` - Start the live-reloading docs server.
+- `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+```
+    mkdocs.yml       # The configuration file.
+    docs/
+        index.md     # The documentation homepage.
+        benchmarks/  # Benchmark results
+        blueprints/  # Blueprints
+        lua/         # Lua scripts
+        ...          # Other markdown pages, images and other files.
+```

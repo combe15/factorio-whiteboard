@@ -7,4 +7,3 @@ for k = 1, #inventory do
 	end;
 end;
 game.write_file("inventory_get_filter.txt",a)
-
