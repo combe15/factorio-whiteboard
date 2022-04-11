@@ -1,4 +1,4 @@
-const FBSR_SERVER = "http://fbsr.petal.org:5000";
+const FBSR_SERVER = "https://fbsr.petal.org:5000";
 
 // get base path to assets for icons etc.
 const assetsPath =
