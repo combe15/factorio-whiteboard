@@ -24,17 +24,10 @@
 }
 .property-row .property-value {
   flex: 1;
-  white-space: pre-line;
   padding: 0.3rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem 0.3rem;
-}
-.property-row .property-value.blueprints {
-  display: block;
-}
-.property-row .property-value.entities {
-  display: block;
 }
 .entity-count {
   height: 20px;
@@ -42,6 +35,10 @@
 .entity-count .count {
   font-family: "Roboto Mono", "SFMono-Regular", "Consolas", "Menlo", monospace;
   padding-right: 0.3rem;
+}
+.entity-count .label {
+  opacity: 0.7;
+  padding-left: 0.3rem;
 }
 .entity-list-toggle {
   cursor: pointer;
