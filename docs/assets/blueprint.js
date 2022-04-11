@@ -287,11 +287,6 @@ const getBlueprintHTML = (blueprint) => {
 const processBlueprint = (blueprintString, container) => {
   try {
     let start = performance.now();
-    console.log(
-      `Decoding ${Math.round(
-        blueprintString.length / 8192
-      )} kB blueprint string`
-    );
     const blueprintObject = decodeBlueprint(blueprintString);
     console.log(`Decoded blueprint string in ${performance.now() - start} ms`);
     console.log(blueprintObject);
