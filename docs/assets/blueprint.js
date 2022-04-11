@@ -1,14 +1,14 @@
 const FBSR_SERVER = "https://fbsr.petal.org:5000";
 
-// get base path to assets for icons etc.
+// get path to assets/ folder from logo image src
 const assetsPath =
   document
-    .querySelector("img[alt='logo']") // assumes that the logo is an image located in docs/assets/
+    .querySelector("img[alt='logo']")
     .getAttribute("src")
     .split("assets/")[0] + "assets";
 
-// decodes a blueprint string into a javascript object
-const decodeBlueprintString = (blueprintString) =>
+// decode a blueprint string into a javascript object
+const decodeBlueprint = (blueprintString) =>
   JSON.parse(
     pako.inflate(
       Uint8Array.from(atob(blueprintString.substr(1)), (c) => c.charCodeAt(0)),
@@ -16,13 +16,9 @@ const decodeBlueprintString = (blueprintString) =>
     )
   );
 
-// encodes a javascript object into the factorio blueprint string
-// const encodeBlueprintString = (blueprintObject) =>
-//   "0" + btoa(String.fromCharCode(...pako.deflate(JSON.stringify(blueprintObject))));
-// maximum call stack exceeded
-
-const encodeBlueprintString = (blueprintObject) => {
-  const byteArray = pako.deflate(JSON.stringify(blueprintObject)); // Uint8Array
+// encodes a javascript object into blueprint string format
+const encodeBlueprint = (blueprintObject) => {
+  const byteArray = pako.deflate(JSON.stringify(blueprintObject));
   // avoid call stack size exceeded https://bugs.webkit.org/show_bug.cgi?id=80797
   const strChunks = [];
   const stride = 32768;
@@ -66,37 +62,41 @@ const getCustomEntries = (obj, denylist = []) => {
   });
 };
 
-const formatText = (text) => {
-  const colors = text.replace(
+// convert [color=pink]text[/color] and [item=explosives] tags to html
+const formatTags = (text) => {
+  let formatted = text.replace(
     /\[color=(.+?)\](.+?)\[\/color\]/gm,
     `<span style="color:$1">$2</span>`
   );
-  const icons = colors.replace(/\[item=(.+?)\]/gm, (match, name) => {
+  formatted = formatted.replace(/\[item=(.+?)\]/gm, (match, name) => {
     return getEntityIcon(name);
   });
-  return icons;
+  return formatted;
 };
 
-const remapping = {
+// internal name -> file name mapping
+const itemToIconName = {
   "straight-rail": "rail",
   "electric-energy-interface": "accumulator",
   "stone-wall": "wall",
   "heat-exchanger": "heat-boiler",
   "infinity-pipe": "pipe",
+  "signal-check": "checked-green",
+  "signal-dot": "list-dot",
 };
 
-// get <img> html for entity icons
+// get <img> for entity icons
 const getEntityIcon = (name) => {
-  let filename = name in remapping ? remapping[name] : name;
+  let filename = name in itemToIconName ? itemToIconName[name] : name;
   let src = `${assetsPath}/factorio/icons/${filename}.png`;
   return `<img class="icon" src="${src}" loading="lazy" alt="${filename}">`;
 };
 
-// get <img> html for blueprint icons
+// get <img> for blueprint icons
 const getSignalIcon = (icon) => {
   let filename =
-    icon.signal.name in remapping
-      ? remapping[icon.signal.name]
+    icon.signal.name in itemToIconName
+      ? itemToIconName[icon.signal.name]
       : icon.signal.name;
   if (icon.signal.type === "virtual") {
     filename = `signal/${icon.signal.name.replace("-", "_")}`;
@@ -114,11 +114,14 @@ const getSignalIcon = (icon) => {
   return `<img class="icon" src="${src}" loading="lazy" alt="[${icon.signal.type}=${icon.signal.name}]">`;
 };
 
+// get bluepring preview image URL from hosted fbsr service
 const getBlueprintImageUrl = async (blueprint) => {
+  // make sure we use blueprint string instead of object
   const blueprintString =
     typeof blueprint === "string" || blueprint instanceof String
       ? blueprint
-      : encodeBlueprintString(blueprint);
+      : encodeBlueprint(blueprint);
+  // post blueprint using JSON body
   const response = await fetch(`${FBSR_SERVER}/blueprint`, {
     method: "POST",
     headers: {
@@ -128,20 +131,18 @@ const getBlueprintImageUrl = async (blueprint) => {
       blueprint: blueprintString,
     }),
   });
-
+  // `data.name` is the SHA1 hash of the blueprint string
   const data = await response.json();
-  console.log("data", data);
-  const url = `${FBSR_SERVER}/cache/${data.name}.png`;
-  return url;
+  return `${FBSR_SERVER}/cache/${data.name}.png`;
 };
 
 // get html representation of blueprint object
 const getBlueprintHTML = (blueprint) => {
-  // assemble html as array instead of using string concatenation for performance
   const htmlFragments = [];
   // blueprint label with item image
-  const icon = { signal: { name: blueprint.item, type: "item" } };
-  const iconImg = getSignalIcon(icon);
+  const iconImg = getSignalIcon({
+    signal: { name: blueprint.item, type: "item" },
+  });
   const icons =
     "icons" in blueprint
       ? blueprint.icons.map((icon) => getSignalIcon(icon))
@@ -156,18 +157,17 @@ const getBlueprintHTML = (blueprint) => {
     )}</div>
         </div>
         <span class="blueprint-label">${
-          blueprint.label ? formatText(blueprint.label) : ""
+          blueprint.label ? formatTags(blueprint.label) : ""
         }<span>
         </div>
     </div>`
   );
   // The CSS property `white-space: pre-line;` preserves newlines
-  // so we don't need to replace "\n" with <br />
   if ("description" in blueprint) {
     htmlFragments.push(
       `<div class="property-row">
         <!-- <div class="property-name">description</div> -->
-        <div class="property-value" style="white-space: pre-line;">${formatText(
+        <div class="property-value" style="white-space: pre-line;">${formatTags(
           blueprint.description.trim()
         )}</div>
       </div>`
@@ -197,7 +197,7 @@ const getBlueprintHTML = (blueprint) => {
       </div>`
     );
   });
-  // entities count
+  // entities count, collapsible
   if ("entities" in blueprint) {
     const entities = [];
     let totalCount = 0;
@@ -206,33 +206,36 @@ const getBlueprintHTML = (blueprint) => {
         ? [...blueprint.entities, ...blueprint.tiles]
         : blueprint.entities;
     const counts = getEntityCounts(allEntities);
-    let maxCount = 0;
-    counts.forEach(([name, count]) => {
-      if (count > maxCount) maxCount = count;
-    });
+    const maxCount = counts.reduce((acc, val) => {
+      return acc > val[1] ? acc : val[1];
+    }, 0);
     const digits = `${maxCount}`.length;
+    const leftPad = (count) => `${count}`.padStart(digits, "\u00A0");
     counts.forEach(([name, count]) => {
       totalCount += count;
-      const paddedCount = `${count}`.padStart(digits, "\u00A0");
-      const icon = getEntityIcon(name);
       entities.push(
-        `<div class="entity-count"><span class="count">${paddedCount}</span>${icon}<span class="label">${name}</span></div>`
+        `<div class="entity-count">
+          <span class="count">${leftPad(count)}</span>
+          ${getEntityIcon(name)}
+          <span class="label">${name}</span>
+        </div>`
       );
     });
-    const noCollapse = entities.join("");
-    const paddedTotalCount = `${totalCount}`.padStart(digits, "\u00A0");
-    const collapse = `<div class="entity-list-toggle" onclick="this.nextElementSibling.style.display='block';this.style.display='none';">
-      <div class="entity-count">
-        <span class="count">${paddedTotalCount}</span> entities <span class="show-on-hover">(click to expand)</span>
-      </div>
-    </div>
-    <div class="entity-list" style="display:none">${noCollapse}</div>`;
     htmlFragments.push(
       `<div class="property-row">
         <div class="property-value entities">${
           entities.length <= 5
-            ? `<div class="entity-list" style="display:block">${noCollapse}</div>`
-            : collapse
+            ? `<div class="entity-list">${entities.join("")}</div>`
+            : `<div class="entity-list-toggle" onclick="this.nextElementSibling.style.display='block';this.style.display='none';">
+            <div class="entity-count">
+              <span class="count">${leftPad(totalCount)}</span>
+              entities 
+              <span class="show-on-hover">(click to expand)</span>
+            </div>
+          </div>
+          <div class="entity-list" style="display:none">${entities.join(
+            ""
+          )}</div>`
         }</div>
       </div>`
     );
@@ -245,7 +248,6 @@ const getBlueprintHTML = (blueprint) => {
     });
     htmlFragments.push(
       `<div class="property-row">
-        <!--<div class="property-name">blueprints</div>-->
         <div class="property-value" style="display: block">${blueprints.join(
           ""
         )}</div>
@@ -254,22 +256,27 @@ const getBlueprintHTML = (blueprint) => {
   }
   // blueprint image preview
   if (blueprint.item === "blueprint") {
-    const blueprintString = encodeBlueprintString({ blueprint: blueprint });
+    const blueprintString = encodeBlueprint({ blueprint: blueprint });
     const uuid = uuidv4();
     htmlFragments.push(
       `<div class="property-row">
-        <!--<div class="property-name">blueprint preview</div>-->
-        <img id="${uuid}" class="blueprint-preview" alt="${uuid}" loading="lazy" style="display: none;"/>
+        <div id="${uuid}" style="padding: 0.3rem">
+          <img class="blueprint-preview" alt="blueprint preview" loading="lazy" style="display: none;"/>
+        </div>
       </div>`
     );
     getBlueprintImageUrl(blueprintString).then((url) => {
-      const image = document.getElementById(uuid);
-      image.src = url;
-      image.style.display = "block";
-      image.onload = function () {
-        image.style.width = `${this.naturalWidth / 1.5}px`;
-        // image.style.height = `${this.naturalHeight / 1.5}px`;
-      };
+      window.setTimeout(() => {
+        const div = document.getElementById(uuid);
+        const img = document.createElement("img");
+        img.src = url;
+        img.setAttribute("loading", "lazy");
+        img.style.display = "block";
+        img.onload = function () {
+          img.style.width = `${this.naturalWidth / 1.5}px`;
+        };
+        div.appendChild(img);
+      }, 0);
     });
   }
   // put it all together
@@ -285,7 +292,7 @@ const processBlueprint = (blueprintString, container) => {
         blueprintString.length / 8192
       )} kB blueprint string`
     );
-    const blueprintObject = decodeBlueprintString(blueprintString);
+    const blueprintObject = decodeBlueprint(blueprintString);
     console.log(`Decoded blueprint string in ${performance.now() - start} ms`);
     console.log(blueprintObject);
     const key = [...Object.keys(blueprintObject)][0];
