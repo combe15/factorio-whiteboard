@@ -1,9 +1,6 @@
-import json
 import os
+import time
 from glob import glob
-import base64
-from typing import Dict, Optional
-import zlib
 from collections import namedtuple
 
 import mkdocs_gen_files  # pip install mkdocs-gen-files
@@ -14,7 +11,9 @@ def process_lua():
     For each .lua files in the ./lua/ folder
     Create a markdown file in docs/lua_scripts/{script_name}.md
     """
-    for path in glob("./lua/*.lua"):
+    start_time = time.time()
+    files = glob("./lua/*.lua")
+    for path in files:
         print(f"Processing {path}")
         basename = os.path.basename(path)
         with open(path) as f:
@@ -26,6 +25,7 @@ def process_lua():
             print(contents, file=f)
             print(f"\n```\n", file=f)
         mkdocs_gen_files.set_edit_path(filename, path)
+    print("Processed %s scripts in %0.3fs" % (len(files), time.time() - start_time))
 
 
 def process_blueprints():
@@ -33,7 +33,9 @@ def process_blueprints():
     For each ./blueprints/ folder
     It will create a markdown file in docs/blueprints/{script_name}.md
     """
-    for path in glob("./blueprints/*"):
+    start_time = time.time()
+    files = glob("./blueprints/*")
+    for path in files:
         print(f"Processing {path}")
         basename = os.path.basename(path)
         with open(path) as f:
@@ -45,6 +47,7 @@ def process_blueprints():
             print(f'```txt title="{path}"\n', file=f)
             print(contents, file=f)
             print(f"\n```\n", file=f)
+            # container and script for client-side blueprint string processing
             print(
                 f"""<div id="blueprintContainer">
                 Processing blueprint string ...
@@ -60,12 +63,12 @@ def process_blueprints():
                 }}
                 </script>""".replace(
                     "    ", ""
-                ),
+                ),  # replace whitespace to avoid markdown treating it as code block
                 file=f,
             )
         mkdocs_gen_files.set_edit_path(filename, path)
+    print("Processed %s blueprints in %0.3fs" % (len(files), time.time() - start_time))
 
 
 process_lua()
 process_blueprints()
-print(f"Done processing")
