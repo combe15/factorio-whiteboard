@@ -43,7 +43,7 @@ def process_blueprints():
         filename = f"blueprints/{basename}.md"
         with mkdocs_gen_files.open(filename, "w") as f:
             # display blueprint string in code block
-            print(f"### Blueprint string\n", file=f)
+            # print(f"### Blueprint string\n", file=f)
             print(f'```txt title="{path}"\n', file=f)
             print(contents, file=f)
             print(f"\n```\n", file=f)
