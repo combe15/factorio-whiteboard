@@ -39,6 +39,8 @@ const remapping = {
   "straight-rail": "rail",
   "electric-energy-interface": "accumulator",
   "stone-wall": "wall",
+  "heat-exchanger": "heat-boiler",
+  "infinity-pipe": "pipe",
 };
 
 // get <img> html for entity icons
@@ -56,6 +58,9 @@ const getSignalIcon = (icon, assetsPath) => {
       : icon.signal.name;
   if (icon.signal.type === "virtual") {
     filename = `signal/${icon.signal.name.replace("-", "_")}`;
+  }
+  if (icon.signal.type === "fluid") {
+    filename = `fluid/${icon.signal.name}`;
   }
   if (icon.signal.name === "signal-check") {
     filename = `checked-green`;
@@ -106,7 +111,7 @@ const getBlueprintHTML = (blueprint) => {
     htmlFragments.push(
       `<div class="property-row">
         <div class="property-name">description</div>
-        <div class="property-value">${blueprint.description}</div>
+        <div class="property-value" style="white-space: pre-line;">${blueprint.description.trim()}</div>
       </div>`
     );
   }
@@ -135,37 +140,40 @@ const getBlueprintHTML = (blueprint) => {
   if ("entities" in blueprint) {
     const entities = [];
     let totalCount = 0;
-    getEntityCounts(blueprint.entities).forEach(([name, count]) => {
+    const allEntities =
+      "tiles" in blueprint
+        ? [...blueprint.entities, ...blueprint.tiles]
+        : blueprint.entities;
+    const counts = getEntityCounts(allEntities);
+    const maxCount = 0;
+    counts.forEach((count) => {
+      if (count > maxCount) maxCount = count;
+    });
+    const digits = `${maxCount}`.length;
+    counts.forEach(([name, count]) => {
       totalCount += count;
-      const paddedCount = `${count}`.padStart(5, "\u00A0");
+      const paddedCount = `${count}`.padStart(digits, "\u00A0");
       const icon = getEntityIcon(name, assetsPath);
       entities.push(
-        `<div class="entity-count"><span class="count">${paddedCount}</span>${icon}</div>`
+        `<div class="entity-count"><span class="count">${paddedCount}</span>${icon}<span class="label">${name}</span></div>`
       );
     });
+    const noCollapse = entities.join("");
+    const paddedTotalCount = `${totalCount}`.padStart(digits, "\u00A0");
+    const collapse = `<div class="entity-list-toggle" onclick="this.nextElementSibling.style.display='block';this.style.display='none';">
+      <div class="entity-count">
+        <span class="count">${paddedTotalCount}</span> entities
+      </div>
+    </div>
+    <div class="entity-list" style="display:none">${noCollapse}</div>`;
     htmlFragments.push(
       `<div class="property-row">
         <div class="property-name">entities</div>
-        <div class="property-value entities"><div class="entity-list-toggle" onclick="this.nextElementSibling.style.display='block';this.style.display='none';">${totalCount} entities</div><div class="entity-list" style="display:none">${entities.join(
-        ""
-      )}</div></div>
-      </div>`
-    );
-  }
-  // tiles count
-  if ("tiles" in blueprint) {
-    const entities = [];
-    getEntityCounts(blueprint.tiles).forEach(([name, count]) => {
-      const paddedCount = `${count}`.padStart(5, "\u00A0");
-      const icon = getEntityIcon(name, assetsPath);
-      entities.push(
-        `<div class="entity-count"><span class="count">${paddedCount}</span>${icon}</div>`
-      );
-    });
-    htmlFragments.push(
-      `<div class="property-row">
-        <div class="property-name">tiles</div>
-        <div class="property-value entities">${entities.join("")}</div>
+        <div class="property-value entities">${
+          entities.length <= 5
+            ? `<div class="entity-list" style="display:block">${noCollapse}</div>`
+            : collapse
+        }</div>
       </div>`
     );
   }
@@ -178,7 +186,9 @@ const getBlueprintHTML = (blueprint) => {
     htmlFragments.push(
       `<div class="property-row">
         <div class="property-name">blueprints</div>
-        <div class="property-value blueprints">${blueprints.join("")}</div>
+        <div class="property-value" style="display: block">${blueprints.join(
+          ""
+        )}</div>
       </div>`
     );
   }
@@ -188,7 +198,14 @@ const getBlueprintHTML = (blueprint) => {
 // decode bluepringString and put info into container: HTMLDivElement
 const processBlueprint = (blueprintString, container) => {
   try {
+    let start = performance.now();
+    console.log(
+      `Decoding ${Math.round(
+        blueprintString.length / 8192
+      )} kB blueprint string`
+    );
     const blueprintObject = decodeBlueprintString(blueprintString);
+    console.log(`Decoded blueprint string in ${performance.now() - start} ms`);
     console.log(blueprintObject);
     const key = [...Object.keys(blueprintObject)][0];
     container.innerHTML = getBlueprintHTML(blueprintObject[key]);
