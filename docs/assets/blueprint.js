@@ -186,6 +186,8 @@ const getBlueprintHTML = (blueprint) => {
     "active_index",
     "schedules",
     "snap-to-grid",
+    "position-relative-to-grid",
+    "absolute-snapping",
   ]);
   customEntries.forEach(([key, val]) => {
     htmlFragments.push(
