@@ -1,0 +1,42 @@
+#blueprintContainer {
+  font-size: 12.5px;
+  font-family: "Roboto Mono", "SFMono-Regular", "Consolas", "Menlo", monospace;
+}
+
+.blueprint {
+  border-top: 1px solid #8884;
+  border-left: 1px solid #8884;
+  border-right: 1px solid #8884;
+  margin-bottom: 0.3rem;
+  background: #0001;
+}
+.property-row {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #8884;
+}
+.property-row .property-name {
+  flex-grow: 0;
+  width: 8rem;
+  min-width: 6rem;
+  padding: 0.3rem;
+}
+.property-row .property-value {
+  flex: 1;
+  white-space: pre-line;
+  padding: 0.3rem;
+  /* border-left: 1px solid #8884; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.3rem;
+}
+.property-row .property-value.blueprints {
+  display: block;
+}
+img.icon {
+  width: 20px;
+  height: 20px;
+  /* aspect-ratio: 1/1; */
+  object-fit: cover;
+  object-position: 0 0;
+}

@@ -17,6 +17,13 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/ZwMvyrs
 
+extra_javascript:
+  - https://unpkg.com/pako@2.0.4/dist/pako.min.js
+  - assets/blueprint.js
+
+extra_css:
+  - assets/blueprint.css
+
 theme:
   name: material
   # custom_dir: overrides
