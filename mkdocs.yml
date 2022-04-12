@@ -83,10 +83,10 @@ theme:
 
 # Plugins
 plugins:
-  - search
-  - tags
-  - search:
-      separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
+  # - search (enable again once we can blacklist blueprint strings)
+  # - tags
+  # - search:
+  #     separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
   - minify:
       minify_html: true
   - gen-files:
