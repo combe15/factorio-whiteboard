@@ -2,10 +2,10 @@
 
 All things AssemblyStorm Factorio
 
-- Grafana dashboard https://grafana.kilen.me/
+- Grafana dashboard [grafana.kilen.me](https://grafana.kilen.me)
 
-- Discord: https://discord.gg/ZwMvyrs
+- Discord: [discord.gg/ZwMvyrs](https://discord.gg/ZwMvyrs)
 
-- Autosaves: https://factorio.kilen.me/saves/
+- Autosaves: [factorio.kilen.me/saves](https://factorio.kilen.me/saves)
 
-- Archives: https://factorio.kilen.me/archive/
+- Archives: [factorio.kilen.me/archive](https://factorio.kilen.me/archive)
