@@ -1,4 +1,5 @@
 /silent-command
+-- Filter the first slots in a players inventory to specific items
 game.player.get_main_inventory().set_filter(1, "solar-panel-equipment");
 game.player.get_main_inventory().set_filter(2, "fusion-reactor-equipment");
 game.player.get_main_inventory().set_filter(3, "battery-equipment");

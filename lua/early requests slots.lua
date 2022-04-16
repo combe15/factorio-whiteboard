@@ -1,4 +1,7 @@
 /silent-command
+--[[ 
+  Set your player logistic slots automaticly
+]]
 local p = game.player
 local c = p.clear_personal_logistic_slot
 local s = p.set_personal_logistic_slot

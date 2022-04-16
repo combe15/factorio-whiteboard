@@ -1,4 +1,5 @@
 /c 
+-- Find labs that lack materials for research
 local x = ''
 for k,v in pairs(game.player.surface.find_entities_filtered({name='lab'})) do 
   f = v.get_inventory(defines.inventory.lab_input).get_item_count 

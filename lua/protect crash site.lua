@@ -1,3 +1,5 @@
+-- Make the crash site as an indestructible object.
+
 -- Since this is probably the first command on the map, make sure to enable commands:
 
 /config set allow-commands admins-only

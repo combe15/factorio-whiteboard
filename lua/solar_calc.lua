@@ -1,4 +1,7 @@
-/sc --[[ solar ]]
+/sc 
+--[[ 
+  Calculates how many solar pannels are needed to transition away from nuke power. 
+]]
 local stats = (game.player.selected
   or game.player.surface.find_entities_filtered{type="electric-pole",limit=1,position=game.player.position,radius=32}[1]
   or error("Script needs mouseover of electric pole.", 0)).electric_network_statistics
