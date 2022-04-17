@@ -1,5 +1,7 @@
 /silent-command
--- Saves what invtory filters you have and exports them into a txt file named "inventory_get_filter.txt"
+--[[
+  Saves what invtory filters you have and exports them into a txt file named "inventory_get_filter.txt"
+]]
 local a="/silent-command\n"; 
 local inventory = game.player.get_main_inventory();
 for k = 1, #inventory do

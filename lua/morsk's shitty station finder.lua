@@ -1,4 +1,7 @@
-/sc --[[ shitty station finder ]]
+/silent-command
+--[[
+  shitty station finder
+]]
 local function find()
   local found,out = 0,""
   for _,e in pairs(game.player.surface.find_entities_filtered{type = {"train-stop"}}) do

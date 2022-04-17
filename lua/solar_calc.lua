@@ -1,4 +1,4 @@
-/sc 
+/silent-command
 --[[ 
   Calculates how many solar pannels are needed to transition away from nuke power. 
 ]]

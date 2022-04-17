@@ -8,7 +8,7 @@
   Insert pings into the command line, and then a closing quote " before using.
 --]]
 
-/sc --[[ undo landfill 2.0 ]]
+/silent-command --[[ undo landfill 2.0 ]]
 local function bounding_box_from_gps_tags(s)
   local a,b,c,d,m,M=1/0,1/0,-1/0,-1/0,math.min,math.max
   for x,y in s:gmatch("%[gps=([+-]?%d+),([+-]?%d+)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)end

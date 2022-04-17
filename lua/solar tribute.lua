@@ -1,4 +1,4 @@
-/c
+/silent-command
 --[[ 
   Calculates who has places the most solar pannels on the map.
 ]]
