@@ -1,5 +1,7 @@
--- optional but you may want to run it so biters won't be generated after chunks are removed
 /c
+--[[
+  optional but you may want to run it so biters won't be generated after chunks are removed
+]]
 local player = game.player
 local surface = player.surface
 surface.clear_pollution()

@@ -1,0 +1,108 @@
+#blueprintContainer {
+  font-size: 12.5px;
+  line-height: 20px;
+  /* font-family: "Roboto Mono", "SFMono-Regular", "Consolas", "Menlo", monospace; */
+}
+.blueprint {
+  border-top: 1px solid #8883;
+  border-left: 1px solid #8883;
+  border-right: 1px solid #8883;
+  margin: 0 0 0.4rem;
+  /* background: #282828; */
+}
+.property-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #8883;
+}
+.property-row .property-name {
+  flex-grow: 0;
+  width: 8rem;
+  min-width: 6rem;
+  padding: 0.4rem;
+  padding-bottom: 0;
+  opacity: 0.3;
+}
+.property-row .property-value {
+  flex: 1;
+  padding: 0.4rem;
+}
+.entity-count {
+  height: 20px;
+}
+.show-on-hover {
+  opacity: 0.15;
+  padding-left: 0.4rem;
+}
+.entity-count:hover .show-on-hover {
+  opacity: 0.6;
+}
+.entity-count .count {
+  font-family: "Roboto Mono", "SFMono-Regular", "Consolas", "Menlo", monospace;
+  padding-right: 0.4rem;
+}
+.entity-count .label {
+  opacity: 0.7;
+  padding-left: 0.4rem;
+}
+.entity-list-toggle {
+  cursor: pointer;
+}
+img.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: 0 0;
+  vertical-align: middle;
+}
+img.blueprint-preview {
+  height: auto;
+  min-height: none;
+  max-height: none;
+  max-width: 100%;
+}
+
+span.blueprint-label {
+  font-size: 18px;
+  margin-left: 12px;
+  line-height: 50px;
+  /* font-weight: bold; */
+}
+
+.label-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.label-icon .item-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.label-icon .blueprint-icons {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 3.5px;
+  left: 3px;
+  display: grid;
+  grid-template-columns: 20px 20px;
+  grid-row: auto auto;
+  grid-column-gap: 2.5px;
+  grid-row-gap: 2.5px;
+}
+.label-icon .blueprint-icons.icons-1 {
+  top: 8px;
+  left: 10px;
+  display: block;
+}
+.label-icon .blueprint-icons.icons-1 img {
+  height: 30px;
+  width: 30px;
+}
+.label-icon .blueprint-icons img {
+  display: block;
+  filter: drop-shadow(0px 2px 3px #0003);
+}
