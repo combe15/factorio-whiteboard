@@ -1,8 +1,8 @@
 # Home
 
-Repo: https://github.com/combe15/factorio-whiteboard
+Repo: [github.com/combe15/factorio-whiteboard](https://github.com/combe15/factorio-whiteboard)
 
-Website: https://combe15.github.io/factorio-whiteboard/
+Website: [combe15.github.io/factorio-whiteboard](https://combe15.github.io/factorio-whiteboard)
 
 This repository is a community-driven general-purpose collaboration of ideas for Factorio.
 
@@ -16,3 +16,4 @@ This repository is a community-driven general-purpose collaboration of ideas for
 - [Make Text Messages with Combinators](https://combe15.github.io/factorio-text-to-constant-combinator/)
 - [Make Logistics Requests Scripts](https://github.com/flbuddymooreiv/factorio-logistics-requests)
 - [Huge Pages Tutorial in Technical Factorio discord](https://discord.com/channels/579345487371567105/579346716243787782/841504803258499072)
+- [Factorio Blueprint Translator](https://combe15.github.io/factorio-blueprint-translator/)
