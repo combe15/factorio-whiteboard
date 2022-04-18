@@ -19,7 +19,9 @@ extra:
 
 extra_javascript:
   - https://unpkg.com/pako@2.0.4/dist/pako.min.js
+  - assets/factorio.js
   - assets/blueprint.js
+  - assets/typesetter.js
 
 extra_css:
   - assets/blueprint.css
@@ -83,10 +85,10 @@ theme:
 
 # Plugins
 plugins:
-  # - search (enable again once we can blacklist blueprint strings)
-  # - tags
-  # - search:
-  #     separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
+  - search
+  - tags
+  - search:
+      separator: "[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;|(?!\\b)(?=[A-Z][a-z])"
   - minify:
       minify_html: true
   - gen-files:

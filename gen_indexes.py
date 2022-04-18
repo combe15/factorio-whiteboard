@@ -41,25 +41,22 @@ def process_blueprints():
         with open(path) as f:
             contents = f.read().strip()
         filename = f"blueprints/{basename}.md"
-        with mkdocs_gen_files.open(filename, "w") as f:
-            # display blueprint string in code block
-            # print(f"### Blueprint string\n", file=f)
-            print(f'```txt title="{path}"\n', file=f)
+        with mkdocs_gen_files.open(f"blueprints/{basename}.txt", "w") as f:
             print(contents, file=f)
+        with mkdocs_gen_files.open(filename, "w") as f:
+            print(f'```txt title="{path}"\n', file=f)
+            # print(contents, file=f)
             print(f"\n```\n", file=f)
             # container and script for client-side blueprint string processing
             print(
-                f"""<div id="blueprintContainer">
-                Processing blueprint string ...
-                </div>
+                f"""<div id="blueprintContainer">Processing blueprint string ...</div>
                 <script>
-                window.blueprint = `{contents}`;
                 if (typeof processBlueprint === "undefined") {{ 
                     window.addEventListener('load', (event) => {{
-                        processBlueprint(window.blueprint, document.getElementById("blueprintContainer"));
+                        processBlueprint(`{basename}`, document.getElementById("blueprintContainer"));
                     }});
                 }} else {{ 
-                    processBlueprint(window.blueprint, document.getElementById("blueprintContainer")); 
+                    processBlueprint(`{basename}`, document.getElementById("blueprintContainer")); 
                 }}
                 </script>""".replace(
                     "    ", ""

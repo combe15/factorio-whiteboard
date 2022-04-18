@@ -1,4 +1,4 @@
-/sc
+/silent-command
 l = ''
 ups = 60 * game.speed
 stop = game.player.selected

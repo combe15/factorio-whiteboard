@@ -10,7 +10,7 @@
   Will actually restore any chunk that touches the region, as the restore feature is chunk-based.
 --]]
 
-/sc --[[ HISTORICALLY ACCURATE TREE RESTORATION --]]
+/silent-command --[[ HISTORICALLY ACCURATE TREE RESTORATION --]]
 local TREES = {}
 for tree,_ in pairs(game.get_filtered_entity_prototypes({{filter="type",type="tree"}})) do
   TREES[#TREES+1] = tree

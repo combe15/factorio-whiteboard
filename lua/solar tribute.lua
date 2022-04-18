@@ -1,4 +1,7 @@
-/c
+/silent-command
+--[[ 
+  Calculates who has places the most solar pannels on the map.
+]]
 local cred={}
 for k,v in pairs(game.player.surface.find_entities_filtered(
     {type={'solar-panel','accumulator'}})) do
