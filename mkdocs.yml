@@ -21,6 +21,7 @@ extra_javascript:
   - https://unpkg.com/pako@2.0.4/dist/pako.min.js
   - assets/factorio.js
   - assets/blueprint.js
+  - assets/typesetter.js
 
 extra_css:
   - assets/blueprint.css
