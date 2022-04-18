@@ -106,3 +106,54 @@ span.blueprint-label {
   display: block;
   filter: drop-shadow(0px 2px 3px #0003);
 }
+
+
+
+.typesetter {
+  background: #282828;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.5rem 1rem;
+}
+
+.typesetter input,
+.typesetter textarea,
+.typesetter button,
+.typesetter select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 0.5rem;
+  display: block;
+  margin: 0;
+  flex: 1;
+}
+
+.typesetter button {
+  background: orange;
+  color: #333;
+  padding: 1rem 0.5rem;
+  font-size: 110%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.typesetter label {
+  display: block;
+  opacity: 0.8;
+}
+
+.typesetter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.typesetter code {
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #fff3;
+  padding: 0.1rem 0.2rem;
+}
