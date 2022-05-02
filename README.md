@@ -8,6 +8,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
 
 ## Links
 
+- [AssemblyStorm Whiteboard live rendering of blueprints and data from this repository -- assboard.xyz](https://assboard.xyz)
 - [stevetrov's legendary builds](https://gist.github.com/stevetrov)
 - [Mulark's Benchmarks](https://mulark.github.io/test-index.html)
 - [AssemblyStorm's Factorio (A'sF) Server Stuff](assemblystorm.html)
