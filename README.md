@@ -21,7 +21,7 @@ This repository is a community-driven general-purpose collaboration of ideas for
 - [factorio-construction-train (python program)](https://github.com/flameSla/factorio-construction-train)
 - [Factorio Server Browser](https://dservindex.com/)
 - [Factorio Blueprint Editor](https://teoxoy.github.io/factorio-blueprint-editor/)
-- [Autotorio](https://www.autotorio.com/blueprint]
+- [Autotorio](https://www.autotorio.com/blueprint)
 
 ## How to collaborate
 
