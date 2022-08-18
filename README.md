@@ -19,6 +19,9 @@ This repository is a community-driven general-purpose collaboration of ideas for
 - [Huge Pages Tutorial in Technical Factorio discord](https://discord.com/channels/579345487371567105/579346716243787782/841504803258499072)
 - [Typesetter](https://combe15.github.io/factorio-whiteboard/typesetter/)
 - [factorio-construction-train (python program)](https://github.com/flameSla/factorio-construction-train)
+- [Factorio Server Browser](https://dservindex.com/)
+- [Factorio Blueprint Editor](https://teoxoy.github.io/factorio-blueprint-editor/)
+- [Autotorio](https://www.autotorio.com/blueprint]
 
 ## How to collaborate
 
