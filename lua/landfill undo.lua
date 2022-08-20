@@ -11,7 +11,7 @@
 /silent-command --[[ undo landfill 2.0 ]]
 local function bounding_box_from_gps_tags(s)
   local a,b,c,d,m,M=1/0,1/0,-1/0,-1/0,math.min,math.max
-  for x,y in s:gmatch("%[gps=([+-]?%d+),([+-]?%d+)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)end
+  for x,y in s:gmatch("%[gps=([+-]?[%d%.]+),([+-]?[%d%.]+)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)end
   return{left_top={x=a,y=b},right_bottom={x=c,y=d}}
 end
 local function count_in(t, s)
