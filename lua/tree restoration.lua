@@ -18,7 +18,7 @@ end
 local function bounding_box_from_gps_tags(s)
   local x1 = math.huge
   local y1,x2,y2 = x1,-x1,-x1
-  for x,y in s:gmatch("%[gps=([+-]?%d+),([+-]?%d+)%]") do
+  for x,y in s:gmatch("%[gps=([+-]?[%d%.]+),([+-]?[%d%.]+)%]") do
     x1 = math.min(x1, x+0)
     y1 = math.min(y1, y+0)
     x2 = math.max(x2, x+0)
