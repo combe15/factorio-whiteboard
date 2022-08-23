@@ -24,7 +24,7 @@ local function go2(gps)
   local new_water,counts = {},{}
   for _,t in pairs(surface.find_tiles_filtered{area=bb, name="landfill"}) do
     local pos = t.position
-    if surface.count_entities_filtered{collision_mask={"ghost-layer","object-layer","player-layer"}, area={left_top=pos, right_bottom={pos.x+1,pos.y+1}}} > 0 then
+    if surface.count_entities_filtered{collision_mask={"ghost-layer","object-layer","player-layer","rail-layer"}, area={left_top=pos, right_bottom={pos.x+1,pos.y+1}}} > 0 then
       count_in(counts, "skipped")
     else
       new_water[#new_water+1] = { position=pos, name="" }
