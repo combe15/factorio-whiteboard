@@ -10,10 +10,23 @@ struct Recipe {
     ingredients: Ingredients,
     results: HashMap<String, u64>,
     expensive: bool,
+    name: String,
+}
+
+fn is_ingredient_treated_as_raw(ingredient: &str) -> bool {
+    match ingredient {
+        "petroleum-gas" => true,
+        "light-oil" => true,
+        "heavy-oil" => true,
+        "uranium-235" => true,
+        "uranium-238" => true,
+        _ => false,
+    }
 }
 
 fn parse(mut v: Value) -> Option<Vec<Recipe>> {
     let v = v.as_object_mut().unwrap();
+    let name = v.get("name").unwrap().as_str().unwrap().to_owned();
     if let Some(decomp) = v.get("allow_decomposition") {
         // TODO: actually allow this for some recipes (like liquefaction)
         if decomp.as_bool() == Some(false) {
@@ -25,16 +38,26 @@ fn parse(mut v: Value) -> Option<Vec<Recipe>> {
             parse_recipe(
                 v.get_mut("expensive").unwrap().as_object_mut().unwrap(),
                 true,
+                name.clone(),
             ),
-            parse_recipe(v.get_mut("normal").unwrap().as_object_mut().unwrap(), false),
+            parse_recipe(
+                v.get_mut("normal").unwrap().as_object_mut().unwrap(),
+                false,
+                name,
+            ),
         ]);
     } else {
-        return Some(vec![parse_recipe(v, false)]);
+        return Some(vec![parse_recipe(v, false, name)]);
     }
 }
 
-fn parse_recipe(recipe: &mut serde_json::Map<String, Value>, expensive: bool) -> Recipe {
+fn parse_recipe(
+    recipe: &mut serde_json::Map<String, Value>,
+    expensive: bool,
+    name: String,
+) -> Recipe {
     let mut parsed_results = HashMap::new();
+
     let rc = match recipe.get("result_count") {
         Some(v) => v.as_u64().unwrap_or(1),
         _ => 1,
@@ -87,6 +110,7 @@ fn parse_recipe(recipe: &mut serde_json::Map<String, Value>, expensive: bool) ->
         ingredients: ings,
         results: parsed_results,
         expensive,
+        name,
     }
 }
 
@@ -107,11 +131,26 @@ fn main() {
     for arg in std::env::args().skip(1) {
         if let Some(recipes_vec) = recipes.get(&arg) {
             for recipe in recipes_vec {
-                let mut tco: HashMap<String, f64> = HashMap::new();
-                for (k, v) in &recipe.ingredients {
-                    recurse_ingredient(&recipes, k, *v as f64, recipe.expensive, &mut tco)
+                if !recipe.expensive {
+                    let mut tco: HashMap<String, f64> = HashMap::new();
+                    let mut time = recipe.energy_required as f64;
+                    for (k, v) in &recipe.ingredients {
+                        recurse_ingredient(
+                            &recipes,
+                            k,
+                            *v as f64,
+                            recipe.expensive,
+                            &mut tco,
+                            &mut time,
+                        )
+                    }
+                    println!(
+                        "Raw Time: {:?}, Material: {:?}, recipe: {:?}",
+                        std::time::Duration::from_secs_f64(time),
+                        tco,
+                        recipe
+                    );
                 }
-                println!("{:?}, recipe: {:?}", tco, recipe);
             }
         }
     }
@@ -123,37 +162,59 @@ fn recurse_ingredient(
     parent_amt: f64,
     expensive: bool,
     tco: &mut HashMap<String, f64>,
+    time: &mut f64,
 ) {
     let mut found = false;
-    if let Some(recipes_with_product) = recipes.get(ingredient) {
-        for recipe in recipes_with_product {
-            if recipe.expensive == expensive {
-                found = true;
-                for (ing, req_amt) in &recipe.ingredients {
-                    recurse_ingredient(
-                        recipes,
-                        ing,
-                        *req_amt as f64 * parent_amt
+    if !is_ingredient_treated_as_raw(ingredient) {
+        if let Some(recipes_with_product) = recipes.get(ingredient) {
+            for recipe in recipes_with_product {
+                if recipe.expensive == expensive && !found {
+                    found = true;
+                    *time += recipe.energy_required * parent_amt
+                        / *recipe.results.get(ingredient).unwrap() as f64;
+                    /*println!(
+                        "Added {}s for {}",
+                        recipe.energy_required * parent_amt
                             / *recipe.results.get(ingredient).unwrap() as f64,
-                        expensive,
-                        tco,
-                    );
+                        recipe.name,
+                    );*/
+                    for (ing, req_amt) in &recipe.ingredients {
+                        recurse_ingredient(
+                            recipes,
+                            ing,
+                            *req_amt as f64 * parent_amt
+                                / *recipe.results.get(ingredient).unwrap() as f64,
+                            expensive,
+                            tco,
+                            time,
+                        );
+                    }
                 }
             }
-        }
-        // Use normal recipe if expensive doesn't exist
-        if !found && expensive {
-            for recipe in recipes_with_product {
-                found = true;
-                for (ing, req_amt) in &recipe.ingredients {
-                    recurse_ingredient(
-                        recipes,
-                        ing,
-                        *req_amt as f64 * parent_amt
+            // Use normal recipe if expensive doesn't exist
+            if !found && expensive {
+                for recipe in recipes_with_product {
+                    found = true;
+                    *time += recipe.energy_required * parent_amt
+                        / *recipe.results.get(ingredient).unwrap() as f64;
+                    /*println!(
+                        "Added {}s for {}",
+                        recipe.energy_required * parent_amt
                             / *recipe.results.get(ingredient).unwrap() as f64,
-                        expensive,
-                        tco,
-                    );
+                        recipe.name,
+                    );*/
+
+                    for (ing, req_amt) in &recipe.ingredients {
+                        recurse_ingredient(
+                            recipes,
+                            ing,
+                            *req_amt as f64 * parent_amt
+                                / *recipe.results.get(ingredient).unwrap() as f64,
+                            expensive,
+                            tco,
+                            time,
+                        );
+                    }
                 }
             }
         }
