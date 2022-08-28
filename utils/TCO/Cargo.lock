@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "factorio-TCO"
+name = "factorio_tco"
 version = "0.1.0"
 dependencies = [
  "serde",
