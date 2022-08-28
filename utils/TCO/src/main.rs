@@ -14,6 +14,12 @@ struct Recipe {
 
 fn parse(mut v: Value) -> Option<Vec<Recipe>> {
     let v = v.as_object_mut().unwrap();
+    if let Some(decomp) = v.get("allow_decomposition") {
+        // TODO: actually allow this for some recipes (like liquefaction)
+        if decomp.as_bool() == Some(false) {
+            return None;
+        }
+    }
     if v.contains_key("expensive") {
         return Some(vec![
             parse_recipe(
@@ -58,6 +64,18 @@ fn parse_recipe(recipe: &mut serde_json::Map<String, Value>, expensive: bool) ->
                 let name = parse_ing.get(0).unwrap().as_str().unwrap().to_owned();
                 let amt = parse_ing.get(1).unwrap().as_u64().unwrap().to_owned();
                 ings.insert(name, amt);
+            }
+            if let Some(parse_ing) = parse_ing.as_object() {
+                let name = parse_ing.get("name").unwrap().as_str().unwrap().to_owned();
+                let catalyst = parse_ing
+                    .get("catalyst")
+                    .map(|v| v.as_u64().unwrap())
+                    .unwrap_or(0);
+                let amt = parse_ing.get("amount").unwrap().as_u64().unwrap() - catalyst;
+                if amt > 0 {
+                    // Ignore net-0 recipes (barreling)
+                    ings.insert(name, amt);
+                }
             }
         }
     }
