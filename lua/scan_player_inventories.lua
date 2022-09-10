@@ -10,7 +10,7 @@ for k,v in pairs(game.players) do
         x = x .. ', ' .. v.name  .. ': ' .. inv.count_empty_stacks() .. '/' .. #inv
       end     
     else       
-      [[-- ragequit detector (could also be admin horseplay) --]]
+      --[[ ragequit detector (could also be admin horseplay) --]]
       x = x .. ', ' .. v.name .. ': ??/??'     
     end   
   end  
