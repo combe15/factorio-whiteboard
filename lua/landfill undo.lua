@@ -11,7 +11,7 @@
 /silent-command --[[ undo landfill 2.0 ]]
 local function bounding_box_from_gps_tags(s)
   local a,b,c,d,m,M=1/0,1/0,-1/0,-1/0,math.min,math.max
-  for x,y in s:gmatch("%[gps=([+-]?%d+),([+-]?%d+)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)end
+  for x,y in s:gmatch("%[gps=([+-]?[%d%.]+),([+-]?[%d%.]+)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)end
   return{left_top={x=a,y=b},right_bottom={x=c,y=d}}
 end
 local function count_in(t, s)
@@ -24,7 +24,7 @@ local function go2(gps)
   local new_water,counts = {},{}
   for _,t in pairs(surface.find_tiles_filtered{area=bb, name="landfill"}) do
     local pos = t.position
-    if surface.count_entities_filtered{collision_mask={"ghost-layer","object-layer","player-layer"}, area={left_top=pos, right_bottom={pos.x+1,pos.y+1}}} > 0 then
+    if surface.count_entities_filtered{collision_mask={"ghost-layer","object-layer","player-layer","rail-layer"}, area={left_top=pos, right_bottom={pos.x+1,pos.y+1}}} > 0 then
       count_in(counts, "skipped")
     else
       new_water[#new_water+1] = { position=pos, name="" }

@@ -2,10 +2,11 @@
 --[[
   Finds the location on the map where there is an assember crafting select item.
   Replace 'spidertron' with your searched item to find its location.
-]]
+--]]
 recipe = 'spidertron'
 
-for k,v in pairs(game.player.surface.find_entities_filtered({name={'assembling-machine-1', 'assembling-machine-2', 'assembling-machine-3'}}))
+for k,v in pairs(game.player.surface.find_entities_filtered(
+    {name={'assembling-machine-1', 'assembling-machine-2', 'assembling-machine-3', 'chemical-plant', 'refinery'}}))
 do
   if
     v.get_recipe() ~= nil and

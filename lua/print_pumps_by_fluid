@@ -1,0 +1,11 @@
+local ents_with_cts = {}
+for _, ent in pairs(game.player.surface.find_entities_filtered{name="pump"}) do
+  for fl, amt in pairs(ent.get_fluid_contents()) do
+    if ents_with_cts[fl] ~= nil then
+        ents_with_cts[fl] = ents_with_cts[fl] + 1
+      else
+        ents_with_cts[fl] = 1
+      end
+  end
+end
+game.player.print(serpent.line(ents_with_cts))
