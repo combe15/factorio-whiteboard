@@ -2,7 +2,7 @@
 
 const factorio = {};
 
-factorio.FBSR_SERVER = "https://fbsr.petal.org:5000";
+factorio.FBSR_SERVER = "https://fbsr.petal.org";
 
 // decode a blueprint string into a javascript object
 factorio.decodeBlueprint = (blueprintString) =>
