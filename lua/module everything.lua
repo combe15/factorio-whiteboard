@@ -1,4 +1,4 @@
-/silent-command --[[ module everything ]]
+/silent-command --[[ module everything --]]
 local function box_on_surface(s)
   local a,b,c,d,m,M,n=1/0,1/0,-1/0,-1/0,math.min,math.max
   for x,y,z in s:gmatch("%[gps=([+-]?[%d%.]+),([+-]?[%d%.]+),?([^%]]*)%]")do a=m(a,x+0)b=m(b,y+0)c=M(c,x+0)d=M(d,y+0)n=z end
