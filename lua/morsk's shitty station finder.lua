@@ -13,6 +13,7 @@ local function find()
                      or c.get_circuit_network(defines.wire_type.green))
                )
            )
+       and e.trains_limit > 1
     then
       found = found + 1
       out = out..found..":[gps="..e.position.x..","..e.position.y.."] "
