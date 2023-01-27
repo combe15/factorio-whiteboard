@@ -3,7 +3,7 @@
   shitty station finder
 ]]
 local function find()
-  local found,out = 0," limit > 0 \n "
+  local found,out = 0," limit == 1 \n "
   local found1,out1 = 0," limit > 1 \n "
   for _,e in pairs(game.player.surface.find_entities_filtered{type = {"train-stop"}}) do
     local c = e.get_control_behavior()
