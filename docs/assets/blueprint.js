@@ -6,7 +6,7 @@ const processBlueprint = (blueprintName, container) => {
   .then(function(response) {
     response.text().then((text) => {
       const blueprintString = text.trim();
-      document.getElementById("__code_1").querySelector("code").innerHTML = blueprintString;
+      document.querySelector(".highlight pre").querySelector("code").innerHTML = blueprintString;
       try {
         // get path to assets/ folder from logo image src
         factorio.assetsPath = document
