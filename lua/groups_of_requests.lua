@@ -80,9 +80,9 @@ function table.clone(oldTable)
     return res
 end
 
-mine_group_1 = 100001
-mine_group_2 = 100002
-mine_group_3 = 100003
+mine_group_1 = -100001
+mine_group_2 = -100002
+mine_group_3 = -100003
 mine_request_1 = {
     {signal = {type = "item", name = "electric-mining-drill"}, count = 30, index = 1},
     {signal = {type = "item", name = "speed-module"}, count = 20, index = 2},
