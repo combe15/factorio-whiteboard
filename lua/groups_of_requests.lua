@@ -14,7 +14,7 @@ end
 
 function change_request_for_availability_of_items(request, items)
     for i = 1, #request do
-        if request[i].signal.type == "item" and not items[request[i].signal.name] then
+        if not items[request[i].signal.name] then
             request[i].count = 0
         end
     end
@@ -34,6 +34,7 @@ function process_group_of_requests(requests)
     end
 
     for j = 1, #requests do
+        requests[j].available_items["signal-G"] = true
         for _, v in pairs(requests[j].requests) do
             change_request_for_availability_of_items(v, requests[j].available_items)
         end
