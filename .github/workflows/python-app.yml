@@ -1,0 +1,31 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@main
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: build application
+      run: |
+          cd "blueprints/128² Production"
+          python bps_compiler_of_book.py -b="bp_compiler_out.out" -m="makefile_bps.json" 
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9
+      with:
+          message: 'building a bps'
