@@ -1,5 +1,5 @@
 {
-    "label": "128² Production v{}",
+    "label": "128² Prod. v{}",
     "version": "1.32",
     "summary_of_book": {
         "item": "blueprint-book",
@@ -25,8 +25,8 @@
         },
         "1": {
             "filename": "rush to bots v*",
-            "label": "rush to bots v4(b).1",
-            "description": "v4(b).1\ndec/26 | by the AssemblyStorm server crew\n\nvariant of RtB with a unified starter-mall for easier train-mall bootstrapping.\n(step 1 can be built manually, but subsequent steps should be built by bots)\n\nThanks.\nI deeply appreciate the help of the following people:\n* Nefrums: https://bit.ly/2DGGbLW\n* flame_sla: for the original RtB and generally being awesome <3"
+            "label": "rush to bots v4(c).1",
+            "description": "v4(c).1\njan/16 | by the AssemblyStorm server crew\n\nvariant of RtB with a unified starter-mall for easier train-mall bootstrapping.\n(step 1 can be built manually, but subsequent steps should be built by bots)\n\nThanks.\nI deeply appreciate the help of the following people:\n* Nefrums: https://bit.ly/2DGGbLW\n* flame_sla: for the original RtB and generally being awesome <3"
         },
         "2": {
             "filename": "128² rails v*",
