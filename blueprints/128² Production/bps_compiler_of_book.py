@@ -38,7 +38,9 @@ def get_md5_for_files():
 def get_filename(filename):
     files = tuple(get_current_working_directory().glob(filename))
     # print("files = ", type(files), files)
-    if len(files) == 1:
+    if len(files) == 0:
+        raise Exception("ERROR!!!  '{}' the file was not found ".format(filename))
+    elif len(files) == 1:
         return files[0]
     else:
         print()
