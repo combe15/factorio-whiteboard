@@ -34,7 +34,9 @@ def process_blueprints():
     It will create a markdown file in docs/blueprints/{script_name}.md
     """
     start_time = time.time()
-    files = glob("./blueprints/*")
+    # files = glob("./blueprints/*")
+    # I don't know how to add directories correctly, so directories are ignored @flameSla
+    files = [file for file in glob("./blueprints/*") if os.path.isfile(file)]
     for path in files:
         print(f"Processing {path}")
         basename = os.path.basename(path)
