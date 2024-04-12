@@ -1,21 +1,23 @@
 {
-    "minor": 3,
+    "minor": 5,
     "files": {
         "128² Attack V2.2.txt": "5fd4033ace96609b15b1756501fa1f6c",
         "128² rails v0.2.5b.txt": "c3b082644f3597e6f8e7ed622307e99e",
-        "32² walls v1.1.3.txt": "f9b17a7975512fe4c70d1c6f7dcd53c4",
-        "all the other outposts.txt": "528be79875d3143bfcee85596a204dd5",
+        "32² walls v1.1.4.txt": "f4cfa4678c40ef701472b914e65a0bc9",
+        "all the other outposts.txt": "9ebb5611e7d807e969aaf12bd228e9dd",
         "BELT KIT.txt": "6632c1de540cbf3b7403af53fe753a24",
-        "Book of Trains v1.8.4.txt": "8a8e5862c3a23ed5173a61c023dc67ba",
-        "bps_compiler_of_book.py": "4f2e721b73b178fc58fae815a3a6fc97",
+        "Book of Trains v1.8.4.txt": "bfd7e422072dacea35bbbbd936f4b172",
+        "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
+        "bp_compiler_out.txt": "a688b09d346e894b93071f3ed88a8777",
+        "bp_compiler_out_v1.32.4.txt": "252c80ca8f29dd05447251781626333d",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "End Game 4-Stop Modular Mines v1.4.4.txt": "ee543e3da737df7ba5159352bb6e9257",
-        "Grid-Nuclear v2023-11-30.01.txt": "20f569deb1c10e0f166426e262d1f2a3",
+        "Grid-Nuclear v2023-11-30.01.txt": "118e0e3f1321027401d6ad44e65b17b8",
         "ITEMS outposts.txt": "297595347afe379900d278b15512d902",
         "makefile_bps.json": "dfdf166322ecbea24a1fbbd663e69f39",
-        "Megamall-in-one v7.4.txt": "a504d83dc9e31266c4678cc83cb86e1b",
-        "misc train stations.txt": "0e23586e179a7c833d17e2c05d3d31c6",
+        "Megamall-in-one v7.4.txt": "baccc0b2ce2ae3e46d919da8d474478b",
+        "misc train stations.txt": "a4da1aa94e60a88b0c326858943d8800",
         "modular early miners v1.1.txt": "57369c1e77b690e0a76f59389fe85a0f",
         "rush to bots v4(c).1.txt": "a093ef334455a80ef80319d38f7e8cd8",
         "Science.txt": "e2957b014194d05c62173354c0b55994",
@@ -27,8 +29,7 @@
         "train malls.txt": "873ffa5d038e90240a89f2c4aed3a8af",
         "Ultrakill Modules v5_rc3.txt": "dc65156a2da3508ece4a3d22e11b8b30",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
-        "vandalism kit.txt": "9441e59c87b3a8d999ff95a84583342d",
-        "zzz_.cmd": "230281b238e426fdac6d2e3159f2e760"
+        "vandalism kit.txt": "9441e59c87b3a8d999ff95a84583342d"
     },
-    "old_file_name": "__128² Production_v1.32.3.out"
+    "old_file_name": "__128² Production_v1.32.5.out"
 }
