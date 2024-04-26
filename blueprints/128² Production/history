@@ -1,26 +1,25 @@
 {
-    "minor": 5,
+    "minor": 7,
     "files": {
         "128² Attack V2.2.txt": "5fd4033ace96609b15b1756501fa1f6c",
         "128² rails v0.2.5b.txt": "c3b082644f3597e6f8e7ed622307e99e",
         "32² walls v1.1.4.txt": "f4cfa4678c40ef701472b914e65a0bc9",
-        "all the other outposts.txt": "9ebb5611e7d807e969aaf12bd228e9dd",
+        "all the other outposts.txt": "48f90025cdf9531aa626758bdb075f38",
         "BELT KIT.txt": "6632c1de540cbf3b7403af53fe753a24",
         "Book of Trains v1.8.4.txt": "bfd7e422072dacea35bbbbd936f4b172",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out.txt": "a688b09d346e894b93071f3ed88a8777",
-        "bp_compiler_out_v1.32.4.txt": "252c80ca8f29dd05447251781626333d",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
-        "End Game 4-Stop Modular Mines v1.4.4.txt": "ee543e3da737df7ba5159352bb6e9257",
+        "End Game 4-Stop Modular Mines v1.4.5.txt": "36d64fff5bbf9c1be27970620edb4578",
         "Grid-Nuclear v2023-11-30.01.txt": "118e0e3f1321027401d6ad44e65b17b8",
         "ITEMS outposts.txt": "297595347afe379900d278b15512d902",
         "makefile_bps.json": "dfdf166322ecbea24a1fbbd663e69f39",
         "Megamall-in-one v7.4.txt": "baccc0b2ce2ae3e46d919da8d474478b",
-        "misc train stations.txt": "a4da1aa94e60a88b0c326858943d8800",
-        "modular early miners v1.1.txt": "57369c1e77b690e0a76f59389fe85a0f",
-        "rush to bots v4(c).1.txt": "a093ef334455a80ef80319d38f7e8cd8",
+        "misc train stations.txt": "62bec269ca93fe51e769bdbb6af47c7a",
+        "modular early miners v1.2.txt": "ff90b5bfae7ad1b7484c18ae9280f893",
+        "rush to bots v4(d).txt": "d01f8c793215d32694567f628c54b189",
         "Science.txt": "e2957b014194d05c62173354c0b55994",
+        "scratch.py": "435aab47e6231a757ba76d9e2010e60a",
         "SolaGrido v1.1.txt": "72bbbbe88c5e145d17645dbfd22d828b",
         "speed-module-3 600h productivity-module-3 300h.txt": "69b9993f838a6cc94e1c894239378768",
         "Starting game.txt": "dccd1d099bcbad741314ca25e0e6ec0f",
@@ -31,5 +30,5 @@
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "9441e59c87b3a8d999ff95a84583342d"
     },
-    "old_file_name": "__128² Production_v1.32.5.out"
+    "old_file_name": "__128² Production_v1.32.7.out"
 }
