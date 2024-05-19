@@ -1,26 +1,26 @@
 {
-    "minor": 14,
+    "minor": 15,
     "files": {
         "128² Attack V2.2.txt": "5fd4033ace96609b15b1756501fa1f6c",
         "128² rails v0.2.5b.txt": "c3b082644f3597e6f8e7ed622307e99e",
         "32² walls v1.1.5.txt": "5f0e28449edbeee418bfd7993ee057c7",
-        "all the other outposts.txt": "7e11fa5221754f002652f343d3f67027",
+        "all the other outposts.txt": "48a5ed519de1366de428900680ca4cfc",
         "BELT KIT.txt": "6632c1de540cbf3b7403af53fe753a24",
         "Book of Trains v1.8.4.txt": "bfd7e422072dacea35bbbbd936f4b172",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.32.13.txt": "fb6f521a37d665e9f897e5c2c06d8935",
+        "bp_compiler_out_v1.32.14.txt": "6567050ca2c6f1e1ced8e10d5513b664",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "End Game 4-Stop Modular Mines v1.4.6.txt": "ea18b6bf335f5a1d0b54ece9d7a38270",
         "Grid-Nuclear v2023-11-30.01.txt": "118e0e3f1321027401d6ad44e65b17b8",
-        "ITEMS outposts.txt": "a6edcc2293bb035f2c31d1479ddb3181",
+        "ITEMS outposts.txt": "0c0c155b99dea95255273dd4ae2f105a",
         "makefile_bps.json": "dfdf166322ecbea24a1fbbd663e69f39",
         "Megamall-in-one v7.4.1a.txt": "0d653fe017c24f602391f3429d74ea64",
         "misc train stations.txt": "c91d39e1eac72afe442e64821f86dc13",
         "modular early miners v1.3.txt": "d059b80b299dc10b4cce32e514bd6e5f",
         "rush to bots v4.3.3.txt": "217afef4fa27bd4fb93bc4e22ecb91fb",
         "Science.txt": "e2957b014194d05c62173354c0b55994",
-        "SolaGrido v1.2.txt": "15ba20ff12c9febf4ff2225e677c7d1b",
+        "SolaGrido v1.2.txt": "c6da26cd3f61fbdda90ac00fb4f01d10",
         "speed-module-3 600h productivity-module-3 300h.txt": "69b9993f838a6cc94e1c894239378768",
         "Starting game.txt": "dccd1d099bcbad741314ca25e0e6ec0f",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
@@ -30,5 +30,5 @@
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941"
     },
-    "old_file_name": "bp_compiler_out_v1.32.14.txt"
+    "old_file_name": "bp_compiler_out_v1.32.15.txt"
 }
