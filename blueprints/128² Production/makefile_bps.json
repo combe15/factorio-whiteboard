@@ -79,29 +79,29 @@
             "description": "Based on DoctroSix's \"Nuclear With Landfill\" v2020-08-26.01\n+ taxi: changed rail loaders/unloaders to better integrate with current blueprints. 2023-11-30\n+ Morsk's changes 2020-11-27.\n+ DoctroSix Grid-Alignment 2020-01-10\n+ DoctroSix: New Combinators on Fuel/Deploy station. New Reactor Column Logi Bridges.  2021-01-17"
         },
         "12": {
-            "filename": "speed-module-3 600h productivity-module-3 300h.txt",
-            "label": "[item=speed-module-3] 600/h + [item=productivity-module-3]300/h",
-            "description": "description is missing"
-        },
-        "13": {
             "filename": "Ultrakill Modules v*",
             "label": "Ultrakill Modules v5_rc3",
             "description": "redesigned with a more modular approach. ...ha! [font=default-tiny-bold](kill me)[/font]\n\nby the Assemblystorm server crew\nv5_release-candidate-3 | 2023-dec-11"
         },
-        "14": {
+        "13": {
             "filename": "Megamall-in-one v*",
             "label": "Megamall-in-one v7.4",
             "description": "designed to integrate with 128² rails\noriginal design by the AssemblyStorm server crew\nversion7 by taxi (special thanks to flame_sla)\n\n2024-01-03\n- all landfill has been moved to step-1\n- added accu/panel unloader & solagrido loader\n- reworked landfill-production station:\n-- should empty trains more consistently\n-- will now drain excess stone out of storage\n- increased graveyard capacity\n- added toggles for tier3 module production (default off except for eff3)\n- added alarms for wood storage"
         },
-        "15": {
+        "14": {
             "filename": "SolaGrido v*",
             "label": "SolaGrido v1.1",
             "description": "hybrid solar deployment system based on (and that attempts to unify):\n- [color=blue]Solarado 0.9.0[/color] by darklich14 and blooper\n- [color=blue]SOLAR GRID 0.2[/color] by NaOida\n\ndesign refined over the years by the AssemblyStorm server crew\nv1 grafted by taxi\n\nv1.1 | 2024-01-03 \n- Solagrido trains will now be handled by the megamall (v7.4 and up)\n- [L]oadegrido will now export products to the megamall only\n- Solagrido unloaders will now use standard 1-2 trash trains!"
         },
+		"15": {
+            "filename": "Shell factory v3.3.txt",
+            "label": "Shell factory v3.3",
+            "description": "description is missing"
+        },
         "16": {
-            "filename": "128² Attack V*",
-            "label": "128² Attack V2.2",
-            "description": "(moved shell factory in \"all the other outposts\" book)\nV2.2 updated shell factory\nV2.1 updated stations and train templates (taxi)\nV2.0 added 12 Arty on water, quadruple Loader\nV1.9 Shell Factory added (NaOida)\nV1.8 INFERNO! bp added (NaOida)\nV1.7 Arty grid fix\nV1.6 Arty factory revamped, made into 2 step book (tetryon)\nV1.5 Arty factory cleaned, aligned to grid (tetryon)\nV1.4 Water Laser added (NaOida)\nV1.3 changed to train limits (Rags)\n<snip old log>"
+            "filename": "wip-tip modernized v1.2.txt",
+            "label": "wip-tip modernized v1.2",
+            "description": "description is missing"
         },
         "17": {
             "filename": "End Game 4-Stop Modular Mines v*",
