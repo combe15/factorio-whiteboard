@@ -59,7 +59,7 @@
             "description": "Book of trains for easy placement\nv1.8.4 ditto\nv1.8.3 updated/removed old trains; added new ones\nv1.8.2 updated locomotive colors\nv1.8.1 removed sub-books and solarado trains (taxi)\nv1.8 Completely modified (NaOida)\nv1.7 updated (NaOida)\nv1.6 Newer book of 4-stop with updated schedule\n[color=255,255,20]v1.5 SuperstalkerX[/color]"
         },
         "8": {
-            "filename": "Trainmall v1.6.3.txt",
+            "filename": "Trainmall v*txt",
             "label": "Trainmall v1.6.3",
             "description": "description is missing"
         },
@@ -94,12 +94,12 @@
             "description": "hybrid solar deployment system based on (and that attempts to unify):\n- [color=blue]Solarado 0.9.0[/color] by darklich14 and blooper\n- [color=blue]SOLAR GRID 0.2[/color] by NaOida\n\ndesign refined over the years by the AssemblyStorm server crew\nv1 grafted by taxi\n\nv1.1 | 2024-01-03 \n- Solagrido trains will now be handled by the megamall (v7.4 and up)\n- [L]oadegrido will now export products to the megamall only\n- Solagrido unloaders will now use standard 1-2 trash trains!"
         },
 		"15": {
-            "filename": "Shell factory v3.3.txt",
+            "filename": "Shell factory v*.txt",
             "label": "Shell factory v3.3",
             "description": "description is missing"
         },
         "16": {
-            "filename": "wip-tip modernized v1.2.txt",
+            "filename": "wip-tip modernized v*.txt",
             "label": "wip-tip modernized v1.2",
             "description": "description is missing"
         },
