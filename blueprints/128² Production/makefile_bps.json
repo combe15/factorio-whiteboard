@@ -1,9 +1,9 @@
 {
     "label": "128² Prod. v{}",
-    "version": "1.32",
+    "version": "1.33",
     "summary_of_book": {
         "item": "blueprint-book",
-        "label": "128² Prod. v1.31.5",
+        "label": "128² Prod. v1.33.0",
         "description": "collection of blueprints used in the AssemblyStorm weekly server.",
         "icons": [
             {
