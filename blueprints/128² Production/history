@@ -1,5 +1,5 @@
 {
-    "minor": 2,
+    "minor": 3,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.6.txt": "dabb3bc3d5a849ce0440b5f6a29ee4db",
@@ -9,11 +9,11 @@
         "Book of Trains v1.8.6.txt": "f51b9746c7647a12c8e05b653614f8fd",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.33.1.txt": "82ad955a090d66869cc6ad6a7e9e9223",
+        "bp_compiler_out_v1.33.2.txt": "1ac25aa05e09b448eab04f7a67f22074",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "End Game 4-Stop Modular Mines v1.4.6.txt": "ea18b6bf335f5a1d0b54ece9d7a38270",
-        "Fulgora.txt": "005d24b5846b4cd996c1c0030da3a66a",
-        "Gleba.txt": "f4c5ef01d88f66eda750e0593412f984",
+        "Fulgora.txt": "5f5881c920f8d4c459f4158c06981ecf",
+        "Gleba.txt": "9fdb5f28b4c39f7139bf827cdcac5c56",
         "Grid-Nuclear v2023-11-30.01.txt": "118e0e3f1321027401d6ad44e65b17b8",
         "ITEMS outposts.txt": "ec22334fceaa96d23d344ad64fe500bc",
         "makefile_bps.json": "f0490a8a9b0441bfbb6154ea1a1ffb5f",
@@ -23,18 +23,18 @@
         "rush to bots v5.2.0.txt": "c198a4b4143a86154bc700b08371eda9",
         "Science.txt": "f0cba13082b5fb8579d5c2f7a10b64c7",
         "Shell factory v3.4.txt": "07c02a29473d336304207c10e4ce79e4",
-        "Ships.txt": "1ea4cdb42cfd472c4c74b852cc971bfe",
+        "Ships.txt": "38c1d5da2980fe36e004d5c25610edbb",
         "SolaGrido v1.2.1.txt": "ccf60d4a591d1da14bb7d6c10fc4ff0c",
         "speed-module-3 600h productivity-module-3 300h.txt": "69b9993f838a6cc94e1c894239378768",
         "Starting game.txt": "ca47d3ac8c984c8efb05b65a00649847",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
-        "toolbox.txt": "978bbdeffb5f38ae0e99dacf13ebf966",
+        "toolbox.txt": "d4b287129429e5fc729b8dc04919ef81",
         "Trainmall v1.7.1.txt": "4bf0236eb141f49f0ce414f52fe76ed7",
         "Ultrakill Modules v5.txt": "15301d5a053d53ad98a6bfb312b3ff7a",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus.txt": "68210c7aa7c674d2939bdc022f6c1eac",
+        "Vulcanus.txt": "ddbd208f1ec19ddceac4023d36185e5e",
         "wip-tip modernized v1.3.txt": "c793d3b3ed59608c650a4062c005198b"
     },
-    "old_file_name": "bp_compiler_out_v1.33.2.txt"
+    "old_file_name": "bp_compiler_out_v1.33.3.txt"
 }
