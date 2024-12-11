@@ -1,5 +1,5 @@
 {
-    "minor": 4,
+    "minor": 5,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.6.txt": "dabb3bc3d5a849ce0440b5f6a29ee4db",
@@ -9,7 +9,7 @@
         "Book of Trains v1.8.6.txt": "f51b9746c7647a12c8e05b653614f8fd",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.33.3.txt": "4e1a989bd286bf9f99290a6974275d5a",
+        "bp_compiler_out_v1.33.4.txt": "cfbac6e27f0ce03a0f8a6084959a900c",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "End Game 4-Stop Modular Mines v1.4.6.txt": "ea18b6bf335f5a1d0b54ece9d7a38270",
         "Fulgora.txt": "5f5881c920f8d4c459f4158c06981ecf",
@@ -20,7 +20,7 @@
         "Megamall-in-one v7.4.3.txt": "6449da2c74870666ef699eba5dc1d718",
         "misc train stations.txt": "654ccdf29f0a1544ecc8b76d4baff69b",
         "modular early miners v1.3.txt": "d059b80b299dc10b4cce32e514bd6e5f",
-        "rush to bots v5.3.0.txt": "5e91513d539445f29a830cc7703b2095",
+        "rush to bots v5.3.0.txt": "99f3bdd4dc646831c6a47dff3222bb7d",
         "Science.txt": "f0cba13082b5fb8579d5c2f7a10b64c7",
         "Shell factory v3.4.txt": "07c02a29473d336304207c10e4ce79e4",
         "Ships.txt": "38c1d5da2980fe36e004d5c25610edbb",
@@ -36,5 +36,5 @@
         "Vulcanus.txt": "ec4580906ccf110bd86c58ccc6982fe6",
         "wip-tip modernized v1.3.txt": "c793d3b3ed59608c650a4062c005198b"
     },
-    "old_file_name": "bp_compiler_out_v1.33.4.txt"
+    "old_file_name": "bp_compiler_out_v1.33.5.txt"
 }
