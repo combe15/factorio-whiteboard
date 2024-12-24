@@ -1,5 +1,5 @@
 {
-    "minor": 7,
+    "minor": 8,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.6.txt": "dabb3bc3d5a849ce0440b5f6a29ee4db",
@@ -9,11 +9,11 @@
         "Book of Trains v1.8.6.txt": "f51b9746c7647a12c8e05b653614f8fd",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.33.6.txt": "3a003db4ecd031352ac08554408b3424",
+        "bp_compiler_out_v1.33.7.txt": "6195698cf0d5ae0f5cf37be8d6692c80",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "End Game 4-Stop Modular Mines v1.4.6.txt": "ea18b6bf335f5a1d0b54ece9d7a38270",
         "Fulgora.txt": "5f5881c920f8d4c459f4158c06981ecf",
-        "Gleba.txt": "9fdb5f28b4c39f7139bf827cdcac5c56",
+        "Gleba.txt": "5239ba20d4653a0c7221cf492046cb82",
         "Grid-Nuclear v2023-11-30.01.txt": "118e0e3f1321027401d6ad44e65b17b8",
         "ITEMS outposts.txt": "ec22334fceaa96d23d344ad64fe500bc",
         "makefile_bps.json": "f575de602130d4e89d765d07df3abd14",
@@ -33,5 +33,5 @@
         "Vulcanus.txt": "3e08467534778e8e02bbd341205e2b6c",
         "wip-tip modernized v1.3.txt": "c793d3b3ed59608c650a4062c005198b"
     },
-    "old_file_name": "bp_compiler_out_v1.33.7.txt"
+    "old_file_name": "bp_compiler_out_v1.33.8.txt"
 }
