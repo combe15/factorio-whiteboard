@@ -49,7 +49,7 @@ e{
             "description": "description is missing"
         },
         "6": {
-            "filename": "Book of Trains v*",
+            "filename": "Book of Trains",
             "label": "Book of Trains v1.8.4",
             "description": "Book of trains for easy placement\nv1.8.4 ditto\nv1.8.3 updated/removed old trains; added new ones\nv1.8.2 updated locomotive colors\nv1.8.1 removed sub-books and solarado trains (taxi)\nv1.8 Completely modified (NaOida)\nv1.7 updated (NaOida)\nv1.6 Newer book of 4-stop with updated schedule\n[color=255,255,20]v1.5 SuperstalkerX[/color]"
         },
