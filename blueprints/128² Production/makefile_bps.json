@@ -94,7 +94,7 @@
             "description": "description is missing"
         },
         "15": {
-            "filename": "Grid-Nuclear v*",
+            "filename": "Grid-Nuclear.txt",
             "label": "Grid-Nuclear v2023-11-30.01",
             "description": "Based on DoctroSix's \"Nuclear With Landfill\" v2020-08-26.01\n+ taxi: changed rail loaders/unloaders to better integrate with current blueprints. 2023-11-30\n+ Morsk's changes 2020-11-27.\n+ DoctroSix Grid-Alignment 2020-01-10\n+ DoctroSix: New Combinators on Fuel/Deploy station. New Reactor Column Logi Bridges.  2021-01-17"
         },
