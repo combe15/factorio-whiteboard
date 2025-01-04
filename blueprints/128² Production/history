@@ -1,15 +1,15 @@
 {
-    "minor": 11,
+    "minor": 12,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.6.txt": "dabb3bc3d5a849ce0440b5f6a29ee4db",
         "all the other outposts.txt": "bdcf512e1dc356f014e6316ac663dc1d",
         "Aquilo.txt": "6c075bd3c08e9673b36c26c52d184cee",
         "BELT KIT.txt": "6632c1de540cbf3b7403af53fe753a24",
-        "Book of Trains.txt": "bd58e5ff169a57b454b15026f765a944",
+        "Book of Trains.txt": "2f6db7d48f580da004246b7e2154f83c",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.33.10.txt": "d6b9517f696bc7eaecae85dc62a8f073",
+        "bp_compiler_out_v1.33.11.txt": "4f621d650d5830f15a6b9e33ca67fe3b",
         "bp_from_json.py": "f9bf198a1955f58b73d07fe10cc16b6c",
         "Fulgora.txt": "5f5881c920f8d4c459f4158c06981ecf",
         "Gleba.txt": "5239ba20d4653a0c7221cf492046cb82",
@@ -33,5 +33,5 @@
         "Vulcanus.txt": "3e08467534778e8e02bbd341205e2b6c",
         "wip-tip modernized v1.3.txt": "c793d3b3ed59608c650a4062c005198b"
     },
-    "old_file_name": "bp_compiler_out_v1.33.11.txt"
+    "old_file_name": "bp_compiler_out_v1.33.12.txt"
 }
