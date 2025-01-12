@@ -1,15 +1,15 @@
 {
-    "minor": 15,
+    "minor": 16,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
-        "32² walls v1.1.6.txt": "dabb3bc3d5a849ce0440b5f6a29ee4db",
+        "32² walls v1.1.6.txt": "e1ca402eeb37c3e81469efcb52621544",
         "all the other outposts.txt": "bdcf512e1dc356f014e6316ac663dc1d",
         "Aquilo.txt": "6c075bd3c08e9673b36c26c52d184cee",
         "BELT KIT.txt": "6632c1de540cbf3b7403af53fe753a24",
         "Book of Trains.txt": "2f6db7d48f580da004246b7e2154f83c",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.33.14.txt": "9d27418ec4e89a48bdfa3b6185ff898c",
+        "bp_compiler_out_v1.33.15.txt": "86d3d05a74c157f049a31073a91c343d",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "Fulgora.txt": "ae6f108d2bb1fa96f51522ce2c0e93d8",
         "Gleba.txt": "5239ba20d4653a0c7221cf492046cb82",
@@ -27,11 +27,11 @@
         "Starting game.txt": "f8ba59883fef83a1c9367c65b3ca936e",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
         "toolbox.txt": "d4b287129429e5fc729b8dc04919ef81",
-        "Trainmall.txt": "02054edb7c1049ef695c7baf1e912976",
+        "Trainmall.txt": "9076d04dc2c8a686d8fc53ffdc9aba84",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
         "Vulcanus.txt": "3e08467534778e8e02bbd341205e2b6c",
         "wip-tip modernized v1.3.txt": "c793d3b3ed59608c650a4062c005198b"
     },
-    "old_file_name": "bp_compiler_out_v1.33.15.txt"
+    "old_file_name": "bp_compiler_out_v1.33.16.txt"
 }
