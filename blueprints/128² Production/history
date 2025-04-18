@@ -1,5 +1,5 @@
 {
-    "minor": 6,
+    "minor": 7,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,7 +8,7 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.5.txt": "0950c665a2e9511f683d950965378200",
+        "bp_compiler_out_v1.34.6.txt": "ec7383df87207ca372d9e323d2ddf0fa",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
         "Fulgora.txt": "8615fff0f77da88634426ae7a6bdeeb0",
@@ -20,14 +20,14 @@
         "modular early miners v2.0.txt": "7a51cb459e7e166fd7f9ea81d16e292c",
         "rush to bots v5.6.0.txt": "6d3457fa8689235ad7f0d8377fca99fc",
         "Science.txt": "bead95ae89bc2de9850b6d7bb43272cb",
-        "Ships.txt": "c5aa15017d967af65b54c62b1c495382",
+        "Ships.txt": "f0796b3165836a856d4c4b94fae2bf95",
         "Starting game.txt": "cea9c8e2da74a7ad4d485d8e94442f15",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
         "toolbox.txt": "d4b287129429e5fc729b8dc04919ef81",
         "Trainmall.txt": "95460bb7f446e43e395b65b264ce6a88",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus.txt": "809090426c0adb23835b9cbe9a1ea6d7"
+        "Vulcanus.txt": "f8b1182dcd28c50cae71d0c297df6978"
     },
-    "old_file_name": "bp_compiler_out_v1.34.6.txt"
+    "old_file_name": "bp_compiler_out_v1.34.7.txt"
 }
