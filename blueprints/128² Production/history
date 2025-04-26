@@ -1,5 +1,5 @@
 {
-    "minor": 9,
+    "minor": 10,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,26 +8,26 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.8.txt": "27c992bd3d6f7723e68626e9861b231a",
+        "bp_compiler_out_v1.34.9.txt": "24dd6a03545e39ce7b7ae9566f1ecf6d",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
         "Fulgora.txt": "4174af276994fb5680979d313f341ca1",
-        "Gleba.txt": "d83595064aa3ff9438acbfb95b19281c",
+        "Gleba.txt": "75a8c4180a955d23c146c62a2a0a8238",
         "Grid-Nuclear.txt": "28cd576149f51bdba2a3b39e5bd321cb",
         "makefile_bps.json": "358db530540f8302ddacfb6b49175aa4",
         "Megamall-in-one v8.0.0.txt": "0efbafd324f4b5ce38c3909ad93b63c5",
         "misc train stations.txt": "56895e0594348da387066fdc3f032af7",
         "modular early miners v2.0.txt": "7a51cb459e7e166fd7f9ea81d16e292c",
-        "rush to bots v5.6.0.txt": "6d3457fa8689235ad7f0d8377fca99fc",
+        "rush to bots v6.0.0.txt": "e3220d4180f32b6430df3cc617f2b8bd",
         "Science.txt": "e3bb636bf82eb3421cd499422f171b97",
         "Ships.txt": "96be3486014e86551cf2c3b7a0414e6d",
         "Starting game.txt": "cea9c8e2da74a7ad4d485d8e94442f15",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
         "toolbox.txt": "f96dd91551a9d391d1925d5005172434",
-        "Trainmall.txt": "95460bb7f446e43e395b65b264ce6a88",
+        "Trainmall.txt": "1b8deb6656f0b8b9e01aae45d68c5379",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus.txt": "88873247e1ee470eaca36b109e0561b4"
+        "Vulcanus.txt": "8f6a757a897e8df98b257c5da1443c6e"
     },
-    "old_file_name": "bp_compiler_out_v1.34.9.txt"
+    "old_file_name": "bp_compiler_out_v1.34.10.txt"
 }
