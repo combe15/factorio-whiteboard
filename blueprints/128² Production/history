@@ -1,5 +1,5 @@
 {
-    "minor": 13,
+    "minor": 14,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,19 +8,20 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.12.txt": "ae5f815399822df7670f5ef0ad2b1014",
+        "bp_compiler_out_v1.34.13.txt": "9020a863c54f3821b4d6efeb11afea8b",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
         "Fulgora.txt": "1ecc4efc9baf92afcdf6fe6387827270",
         "Gleba.txt": "75a8c4180a955d23c146c62a2a0a8238",
         "Grid-Nuclear.txt": "28cd576149f51bdba2a3b39e5bd321cb",
-        "makefile_bps.json": "dd65baaf2f0c979451ac9acaae3a2fd0",
+        "makefile_bps.json": "d357cbed300978f01560afe5d428570e",
         "Megamall-in-one v8.0.0.txt": "0efbafd324f4b5ce38c3909ad93b63c5",
         "misc train stations.txt": "56895e0594348da387066fdc3f032af7",
         "modular early miners v2.0.txt": "7a51cb459e7e166fd7f9ea81d16e292c",
+        "Nauvis.txt": "c46371da7e24b9f61c650da0125f7599",
         "rush to bots v6.2.1.txt": "3faa57aa7538d0338c8896fb6e2d021a",
         "Science.txt": "4b4d4df4952d6ae9ca960b70aea6e7d3",
-        "Ships.txt": "94c0f831debd16da06693c55739d1aa0",
+        "Ships.txt": "dcbe91aa4e5619e9cb17712619aa2045",
         "Starting game.txt": "e9c6ad2f93d21078f08cc62c8baa677f",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
         "toolbox.txt": "dba2450494a41f1388d91fb29b5eacfc",
@@ -29,5 +30,5 @@
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
         "Vulcanus 1.0.txt": "2f0a61c31b6fcae720d850e831cfbf2f"
     },
-    "old_file_name": "bp_compiler_out_v1.34.13.txt"
+    "old_file_name": "bp_compiler_out_v1.34.14.txt"
 }
