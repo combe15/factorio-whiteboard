@@ -1,9 +1,9 @@
 {
     "label": "128² Prod. v{}",
-    "version": "1.33",
+    "version": "1.34",
     "summary_of_book": {
         "item": "blueprint-book",
-        "label": "128² Prod. v1.33.0",
+        "label": "128² Prod. v1.34.0",
         "description": "collection of blueprints used in the AssemblyStorm weekly server.",
         "icons": [
             {
@@ -15,7 +15,7 @@
             }
         ],
         "active_index": 0,
-        "version": 281479278231552
+        "version": 562949955256321
     },
     "indexes": {
         "0": {
@@ -49,96 +49,71 @@
             "description": "description is missing"
         },
         "6": {
-            "filename": "Book of Trains v*",
-            "label": "Book of Trains v1.8.4",
+            "filename": "Book of Trains.txt",
+            "label": "Book of Trains",
             "description": "Book of trains for easy placement\nv1.8.4 ditto\nv1.8.3 updated/removed old trains; added new ones\nv1.8.2 updated locomotive colors\nv1.8.1 removed sub-books and solarado trains (taxi)\nv1.8 Completely modified (NaOida)\nv1.7 updated (NaOida)\nv1.6 Newer book of 4-stop with updated schedule\n[color=255,255,20]v1.5 SuperstalkerX[/color]"
         },
         "7": {
-            "filename": "Trainmall v*txt",
+            "filename": "Trainmall.txt",
             "label": "Trainmall v1.6.3",
             "description": "description is missing"
         },
-		"8": {
-            "filename": "Vulcanus.txt",
+        "8": {
+            "filename": "Vulcanus*",
             "label": "Vulcanus",
             "description": "description is missing"
         },
-		"9": {
+        "9": {
             "filename": "Gleba.txt",
             "label": "Gleba",
             "description": "description is missing"
         },
-		 "10": {
+        "10": {
             "filename": "Fulgora.txt",
             "label": "Fulgora",
             "description": "description is missing"
         },
-		"11": {
+        "11": {
+            "filename": "Nauvis.txt",
+            "label": "Nauvis Mid/Late",
+            "description": "description is missing"
+        },
+        "12": {
             "filename": "Aquilo.txt",
             "label": "Aquilo",
             "description": "description is missing"
         },
-		"12": {
+        "13": {
             "filename": "Ships.txt",
             "label": "Ships",
             "description": "description is missing"
         },
-        "13": {
-            "filename": "ITEMS outposts.txt",
-            "label": "ITEMS outposts",
-            "description": "description is missing"
-        },
         "14": {
-            "filename": "all the other outposts.txt",
-            "label": "[font=count-font][color=yellow]all the other outposts[/color][/font]",
-            "description": "description is missing"
-        },
-        "15": {
-            "filename": "Grid-Nuclear v*",
+            "filename": "Grid-Nuclear.txt",
             "label": "Grid-Nuclear v2023-11-30.01",
             "description": "Based on DoctroSix's \"Nuclear With Landfill\" v2020-08-26.01\n+ taxi: changed rail loaders/unloaders to better integrate with current blueprints. 2023-11-30\n+ Morsk's changes 2020-11-27.\n+ DoctroSix Grid-Alignment 2020-01-10\n+ DoctroSix: New Combinators on Fuel/Deploy station. New Reactor Column Logi Bridges.  2021-01-17"
         },
-        "16": {
-            "filename": "Megamall-in-one v*",
-            "label": "Megamall-in-one v7.4",
-            "description": "designed to integrate with 128² rails\noriginal design by the AssemblyStorm server crew\nversion7 by taxi (special thanks to flame_sla)\n\n2024-01-03\n- all landfill has been moved to step-1\n- added accu/panel unloader & solagrido loader\n- reworked landfill-production station:\n-- should empty trains more consistently\n-- will now drain excess stone out of storage\n- increased graveyard capacity\n- added toggles for tier3 module production (default off except for eff3)\n- added alarms for wood storage"
-        },
-        "17": {
-            "filename": "SolaGrido v*",
-            "label": "SolaGrido v1.1",
-            "description": "hybrid solar deployment system based on (and that attempts to unify):\n- [color=blue]Solarado 0.9.0[/color] by darklich14 and blooper\n- [color=blue]SOLAR GRID 0.2[/color] by NaOida\n\ndesign refined over the years by the AssemblyStorm server crew\nv1 grafted by taxi\n\nv1.1 | 2024-01-03 \n- Solagrido trains will now be handled by the megamall (v7.4 and up)\n- [L]oadegrido will now export products to the megamall only\n- Solagrido unloaders will now use standard 1-2 trash trains!"
-        },
-        "18": {
-            "filename": "wip-tip modernized v*.txt",
-            "label": "wip-tip modernized v1.2",
+        "15": {
+            "filename": "Science.txt",
+            "label": "Science",
             "description": "description is missing"
         },
-        "19": {
-            "filename": "End Game 4-Stop Modular Mines v*",
-            "label": "End Game 4-Stop Modular Mines v1.4.4",
-            "description": "by the AssemblyStorm server crew\n\nPlace the blades first, then entry lanes, then stacker and exits\n\n2023-12-27 - added bots to unloader requests; connected stray power network\n2023-12-07 - updated minebuilder unloader\n2023-12-01 - restyle upgradeplanners & book icons\n2023-11-30 - added grid snapping to blades, hacked 'ports\n2023-11-23 - Grouped prints by type. Wired entry signals to poles. Remade minebuilder. Added Uranium pre-built & 8-wagon blade.\n<snip old log>"
-        },
-        "20": {
-            "filename": "BELT KIT.txt",
-            "label": "BELT KIT",
-            "description": "END GAME V0.2 (NaOida)"
-        },
-        "21": {
+        "16": {
             "filename": "Tasty arachnophobia.txt",
             "label": "Tasty arachnophobia",
             "description": "description is missing"
         },
-        "22": {
+        "17": {
             "filename": "vandalism kit.txt",
             "label": "vandalism kit",
             "description": "description is missing"
         },
-        "23": {
+        "18": {
             "filename": "toolbox.txt",
             "label": "toolbox",
             "description": "description is missing"
         },
-        "24": {
+        "19": {
             "filename": "Useful Links V*",
             "label": "Useful Links V0.2",
             "description": "Assembly Storm Discord\nhttps://discord.gg/ZwMvyrs\n\nAssembly Storm Statistics\nhttps://grafana.kilen.me/d/HUrddAg7k/factorio-instances?orgId=1&var-server=factorio-weekly&var-offset=14w&from=now-6h&to=now&refresh=10s\n\nAssembly Storm Blue Prints\nhttps://github.com/combe15/factorio-whiteboard/tree/main/blueprints\n\nBlueprint Toolbox\nhttps://christoph-frick.github.io/factorio-blueprint-tools/\n\nFactorio Blueprint Editor\nhttps://fbe.teoxoy.com/"
