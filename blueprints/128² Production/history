@@ -1,5 +1,5 @@
 {
-    "minor": 20,
+    "minor": 21,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,7 +8,7 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.19.txt": "6369ed426f8bf39c83a3ac54dd5d8447",
+        "bp_compiler_out_v1.34.20.txt": "486d396548c343ffd5f7a1228cfb2a42",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
         "Fulgora.txt": "040924ca5a79f8af1dd16275793ef0fa",
@@ -27,7 +27,7 @@
         "toolbox.txt": "dba2450494a41f1388d91fb29b5eacfc",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus 1.0.txt": "6caed1e1b2174523d328a5d7643a6e31"
+        "Vulcanus 1.0.txt": "14973dd287707010ca46d6e0c3bffbdd"
     },
-    "old_file_name": "bp_compiler_out_v1.34.20.txt"
+    "old_file_name": "bp_compiler_out_v1.34.21.txt"
 }
