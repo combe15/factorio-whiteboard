@@ -1,5 +1,5 @@
 {
-    "minor": 26,
+    "minor": 27,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,11 +8,11 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.25.txt": "d20e8ccf7c8dc7e27456f61fab851459",
+        "bp_compiler_out_v1.34.26.txt": "dc94586d8f696280656b0ab52bf381b1",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
-        "Fulgora.txt": "39161f2829dc934220030eeff216ec73",
-        "Gleba.txt": "e0f1ed3bd4c1d8b88be6462c71c6bf5d",
+        "Fulgora.txt": "a35d04eff6bdd1480acaaead839949a7",
+        "Gleba.txt": "3549a511bc085c5e13297ab8c051091f",
         "Grid-Nuclear.txt": "d15944bcb448f80f2e6be81e0e3b58b3",
         "makefile_bps.json": "7b0f46b869c858fc4d7b0358504c06e9",
         "misc train stations.txt": "56895e0594348da387066fdc3f032af7",
@@ -27,7 +27,7 @@
         "toolbox.txt": "dba2450494a41f1388d91fb29b5eacfc",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus 1.0.txt": "2d485345d38a2a80c8ded892da6f9c81"
+        "Vulcanus 1.0.txt": "fb12a889e87569539ce1253e40f95c1c"
     },
-    "old_file_name": "bp_compiler_out_v1.34.26.txt"
+    "old_file_name": "bp_compiler_out_v1.34.27.txt"
 }
