@@ -1,5 +1,5 @@
 {
-    "minor": 32,
+    "minor": 33,
     "files": {
         "128² rails v2.0.0": "08762a0898a10af157ec46d85e740f02",
         "32² walls v1.1.7.txt": "8ded591b8b634a70ff5b1c7fd3e76489",
@@ -8,10 +8,10 @@
         "Book of Trains.txt": "33a503ed25816ee2c44cf32d810f5f95",
         "bps_compiler_of_book.py": "a1aa801ae91e3464803ea03709583585",
         "bps_decompiler_of_book.py": "587e7361c42808e95ea0b55b6e6b029e",
-        "bp_compiler_out_v1.34.31.txt": "7cd38fc972f5bc19bd44369b9e5394ab",
+        "bp_compiler_out_v1.34.32.txt": "e8d209877da00af185bbe4aa5b8c3f1f",
         "bp_from_json.py": "0acae81607f4c4a16bf3cb6256396534",
         "compile_blueprints.bat": "fa5637e06ba2af30a73e21d3511b3786",
-        "Fulgora.txt": "a35d04eff6bdd1480acaaead839949a7",
+        "Fulgora.txt": "cce4468a7707304439b3a8ad63703177",
         "Gleba.txt": "c58798955dc571950989d9b9ffa96074",
         "Grid-Nuclear.txt": "56706c907aad8d4201e1ef0b69097dbc",
         "makefile_bps.json": "7b0f46b869c858fc4d7b0358504c06e9",
@@ -19,15 +19,15 @@
         "modular early miners v2.0.txt": "d31f22eaae49c162cf9d29ab467eedfb",
         "Nauvis.txt": "65855088eea4d8f802ed942332f26d13",
         "Power.txt": "9c6e58e5559f9dac496d808e42aeae45",
-        "rush to bots v6.7.0.txt": "5de98df6d8f10bc8cf85c32bc1c95ee2",
+        "rush to bots v6.8.0.txt": "dbab3f9a3bcf4ed17b007a86bc5af7b6",
         "Science.txt": "8d2e138ec3cb0a4605eed1790369784c",
         "Ships.txt": "17831b72bea968c292ebac592eba5049",
-        "Starting game.txt": "9556799c9633292e09f9f9a5de4bd991",
+        "Starting game.txt": "213fe1655d1322d70d8be8f573b00994",
         "Tasty arachnophobia.txt": "ba8e2ec99eea78d8c696463cefd5714d",
         "toolbox.txt": "1d194864a2ed349e6f43ef1a5652b9b4",
         "Useful Links V0.2.txt": "8e4d71e8f66676ce64f1052bd633e2f6",
         "vandalism kit.txt": "93ff2b33834c0344d63a6c3dd367d941",
-        "Vulcanus 1.0.txt": "fb12a889e87569539ce1253e40f95c1c"
+        "Vulcanus 1.0.txt": "fcf46f4250796bc34265cc135db33e9e"
     },
-    "old_file_name": "bp_compiler_out_v1.34.32.txt"
+    "old_file_name": "bp_compiler_out_v1.34.33.txt"
 }
