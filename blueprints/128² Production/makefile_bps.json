@@ -112,6 +112,11 @@
             "filename": "Useful Links V*",
             "label": "Useful Links V0.2",
             "description": "Assembly Storm Discord\nhttps://discord.gg/ZwMvyrs\n\nAssembly Storm Statistics\nhttps://grafana.kilen.me/d/HUrddAg7k/factorio-instances?orgId=1&var-server=factorio-weekly&var-offset=14w&from=now-6h&to=now&refresh=10s\n\nAssembly Storm Blue Prints\nhttps://github.com/combe15/factorio-whiteboard/tree/main/blueprints\n\nBlueprint Toolbox\nhttps://christoph-frick.github.io/factorio-blueprint-tools/\n\nFactorio Blueprint Editor\nhttps://fbe.teoxoy.com/"
+        },
+        "19": {
+            "filename": "Quality.txt",
+            "label": "Quality",
+            "description": "description is missing"
         }
     }
 }
